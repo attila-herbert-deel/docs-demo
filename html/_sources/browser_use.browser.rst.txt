@@ -1,6 +1,11 @@
 browser\_use.browser package
 ============================
 
+.. automodule:: browser_use.browser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Submodules
 ----------
 
@@ -10,11 +15,3 @@ Submodules
    browser_use.browser.browser
    browser_use.browser.context
    browser_use.browser.views
-
-Module contents
----------------
-
-.. automodule:: browser_use.browser
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -1,6 +1,3 @@
-browser\_use.logging\_config module
-===================================
-
 .. automodule:: browser_use.logging_config
    :members:
    :undoc-members:

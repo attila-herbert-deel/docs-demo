@@ -1,6 +1,11 @@
 browser\_use.dom package
 ========================
 
+.. automodule:: browser_use.dom
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Submodules
 ----------
 
@@ -9,11 +14,3 @@ Submodules
 
    browser_use.dom.service
    browser_use.dom.views
-
-Module contents
----------------
-
-.. automodule:: browser_use.dom
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>browser_use.agent.views module &mdash; browser_use v1 documentation</title>
+  <title>&lt;no title&gt; &mdash; browser_use v1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="browser_use.browser package" href="browser_use.browser.html" />
-    <link rel="prev" title="browser_use.agent.tests module" href="browser_use.agent.tests.html" /> 
+    <link rel="prev" title="&lt;no title&gt;" href="browser_use.agent.tests.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,10 +45,18 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="browser_use.agent.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a></li>
@@ -58,7 +66,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -79,7 +86,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="browser_use.html">browser_use package</a></li>
           <li class="breadcrumb-item"><a href="browser_use.agent.html">browser_use.agent package</a></li>
-      <li class="breadcrumb-item active">browser_use.agent.views module</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/browser_use.agent.views.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -89,15 +96,331 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-agent-views-module">
-<h1>browser_use.agent.views module<a class="headerlink" href="#browser-use-agent-views-module" title="Link to this heading"></a></h1>
-</section>
+  <dl class="py class" id="module-browser_use.agent.views">
+<dt class="sig sig-object py" id="browser_use.agent.views.ActionResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.views.</span></span><span class="sig-name descname"><span class="pre">ActionResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_done</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extracted_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_in_memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.agent.views.ActionResult" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Result of executing an action</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.ActionResult._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.agent.views.ActionResult._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.ActionResult.error">
+<span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.agent.views.ActionResult.error" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.ActionResult.extracted_content">
+<span class="sig-name descname"><span class="pre">extracted_content</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.agent.views.ActionResult.extracted_content" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.ActionResult.include_in_memory">
+<span class="sig-name descname"><span class="pre">include_in_memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#browser_use.agent.views.ActionResult.include_in_memory" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.ActionResult.is_done">
+<span class="sig-name descname"><span class="pre">is_done</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.agent.views.ActionResult.is_done" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.ActionResult.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#browser_use.agent.views.ActionResult.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentBrain">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.views.</span></span><span class="sig-name descname"><span class="pre">AgentBrain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evaluation_previous_goal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">next_goal</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.agent.views.AgentBrain" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Current state of the agent</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentBrain._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.agent.views.AgentBrain._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentBrain.evaluation_previous_goal">
+<span class="sig-name descname"><span class="pre">evaluation_previous_goal</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.agent.views.AgentBrain.evaluation_previous_goal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentBrain.memory">
+<span class="sig-name descname"><span class="pre">memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.agent.views.AgentBrain.memory" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentBrain.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#browser_use.agent.views.AgentBrain.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentBrain.next_goal">
+<span class="sig-name descname"><span class="pre">next_goal</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.agent.views.AgentBrain.next_goal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentError">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.views.</span></span><span class="sig-name descname"><span class="pre">AgentError</span></span><a class="headerlink" href="#browser_use.agent.views.AgentError" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Container for agent error handling</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentError.NO_VALID_ACTION">
+<span class="sig-name descname"><span class="pre">NO_VALID_ACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'No</span> <span class="pre">valid</span> <span class="pre">action</span> <span class="pre">found'</span></em><a class="headerlink" href="#browser_use.agent.views.AgentError.NO_VALID_ACTION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentError.RATE_LIMIT_ERROR">
+<span class="sig-name descname"><span class="pre">RATE_LIMIT_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Rate</span> <span class="pre">limit</span> <span class="pre">reached.</span> <span class="pre">Waiting</span> <span class="pre">before</span> <span class="pre">retry.'</span></em><a class="headerlink" href="#browser_use.agent.views.AgentError.RATE_LIMIT_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentError.VALIDATION_ERROR">
+<span class="sig-name descname"><span class="pre">VALIDATION_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Invalid</span> <span class="pre">model</span> <span class="pre">output</span> <span class="pre">format.</span> <span class="pre">Please</span> <span class="pre">follow</span> <span class="pre">the</span> <span class="pre">correct</span> <span class="pre">schema.'</span></em><a class="headerlink" href="#browser_use.agent.views.AgentError.VALIDATION_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentError.format_error">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">format_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Exception</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_trace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentError.format_error" title="Link to this definition"></a></dt>
+<dd><p>Format error message based on error type and optionally include trace</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.views.</span></span><span class="sig-name descname"><span class="pre">AgentHistory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory" title="browser_use.browser.views.BrowserStateHistory"><span class="pre">BrowserStateHistory</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.agent.views.AgentHistory" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>History item for agent actions</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.agent.views.AgentHistory._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory.get_interacted_element">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_interacted_element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">selector_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">DOMHistoryElement</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistory.get_interacted_element" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'arbitrary_types_allowed':</span> <span class="pre">True,</span> <span class="pre">'protected_namespaces':</span> <span class="pre">()}</span></em><a class="headerlink" href="#browser_use.agent.views.AgentHistory.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory.model_dump">
+<span class="sig-name descname"><span class="pre">model_dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistory.model_dump" title="Link to this definition"></a></dt>
+<dd><p>Custom serialization handling circular references</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory.model_output">
+<span class="sig-name descname"><span class="pre">model_output</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.agent.views.AgentHistory.model_output" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory.result">
+<span class="sig-name descname"><span class="pre">result</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.agent.views.AgentHistory.result" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistory.state">
+<span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory" title="browser_use.browser.views.BrowserStateHistory"><span class="pre">BrowserStateHistory</span></a></em><a class="headerlink" href="#browser_use.agent.views.AgentHistory.state" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.views.</span></span><span class="sig-name descname"><span class="pre">AgentHistoryList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">history</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.AgentHistory" title="browser_use.agent.views.AgentHistory"><span class="pre">AgentHistory</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>List of agent history items</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.action_names">
+<span class="sig-name descname"><span class="pre">action_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.action_names" title="Link to this definition"></a></dt>
+<dd><p>Get all action names from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.action_results">
+<span class="sig-name descname"><span class="pre">action_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.action_results" title="Link to this definition"></a></dt>
+<dd><p>Get all results from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.errors">
+<span class="sig-name descname"><span class="pre">errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.errors" title="Link to this definition"></a></dt>
+<dd><p>Get all errors from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.extracted_content">
+<span class="sig-name descname"><span class="pre">extracted_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.extracted_content" title="Link to this definition"></a></dt>
+<dd><p>Get all extracted content from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.final_result">
+<span class="sig-name descname"><span class="pre">final_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.final_result" title="Link to this definition"></a></dt>
+<dd><p>Final result from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.has_errors">
+<span class="sig-name descname"><span class="pre">has_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.has_errors" title="Link to this definition"></a></dt>
+<dd><p>Check if the agent has any errors</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.history">
+<span class="sig-name descname"><span class="pre">history</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.AgentHistory" title="browser_use.agent.views.AgentHistory"><span class="pre">AgentHistory</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.history" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.is_done">
+<span class="sig-name descname"><span class="pre">is_done</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.is_done" title="Link to this definition"></a></dt>
+<dd><p>Check if the agent is done</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.last_action">
+<span class="sig-name descname"><span class="pre">last_action</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">dict</span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.last_action" title="Link to this definition"></a></dt>
+<dd><p>Last action in history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.load_from_file">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#browser_use.agent.views.AgentHistoryList" title="browser_use.agent.views.AgentHistoryList"><span class="pre">AgentHistoryList</span></a></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.load_from_file" title="Link to this definition"></a></dt>
+<dd><p>Load history from JSON file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.model_actions">
+<span class="sig-name descname"><span class="pre">model_actions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.model_actions" title="Link to this definition"></a></dt>
+<dd><p>Get all actions from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.model_actions_filtered">
+<span class="sig-name descname"><span class="pre">model_actions_filtered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">include</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.model_actions_filtered" title="Link to this definition"></a></dt>
+<dd><p>Get all model actions from history as JSON</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.model_dump">
+<span class="sig-name descname"><span class="pre">model_dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.model_dump" title="Link to this definition"></a></dt>
+<dd><p>Custom serialization that properly uses AgentHistory’s model_dump</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.model_outputs">
+<span class="sig-name descname"><span class="pre">model_outputs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.model_outputs" title="Link to this definition"></a></dt>
+<dd><p>Get all model outputs from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.model_thoughts">
+<span class="sig-name descname"><span class="pre">model_thoughts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.AgentBrain" title="browser_use.agent.views.AgentBrain"><span class="pre">AgentBrain</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.model_thoughts" title="Link to this definition"></a></dt>
+<dd><p>Get all thoughts from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.save_to_file">
+<span class="sig-name descname"><span class="pre">save_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.save_to_file" title="Link to this definition"></a></dt>
+<dd><p>Save history to JSON file with proper serialization</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.screenshots">
+<span class="sig-name descname"><span class="pre">screenshots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.screenshots" title="Link to this definition"></a></dt>
+<dd><p>Get all screenshots from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentHistoryList.urls">
+<span class="sig-name descname"><span class="pre">urls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentHistoryList.urls" title="Link to this definition"></a></dt>
+<dd><p>Get all unique URLs from history</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.views.</span></span><span class="sig-name descname"><span class="pre">AgentOutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.agent.views.AgentBrain" title="browser_use.agent.views.AgentBrain"><span class="pre">AgentBrain</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.html#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.agent.views.AgentOutput" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Output model for agent</p>
+<p>&#64;dev note: this model is extended with custom actions in AgentService. You can also use some fields that are not in this model as provided by the linter, as long as they are registered in the DynamicActions model.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentOutput._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.agent.views.AgentOutput._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentOutput.action">
+<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.html#browser_use.ActionModel" title="browser_use.ActionModel"><span class="pre">ActionModel</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.agent.views.AgentOutput.action" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentOutput.current_state">
+<span class="sig-name descname"><span class="pre">current_state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#browser_use.agent.views.AgentBrain" title="browser_use.agent.views.AgentBrain"><span class="pre">AgentBrain</span></a></em><a class="headerlink" href="#browser_use.agent.views.AgentOutput.current_state" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentOutput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'arbitrary_types_allowed':</span> <span class="pre">True}</span></em><a class="headerlink" href="#browser_use.agent.views.AgentOutput.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentOutput.type_with_custom_actions">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">type_with_custom_actions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">custom_actions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.html#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.views.AgentOutput.type_with_custom_actions" title="Link to this definition"></a></dt>
+<dd><p>Extend actions with custom actions</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentStepInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.views.</span></span><span class="sig-name descname"><span class="pre">AgentStepInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">step_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="s"><span class="pre">'int'</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="s"><span class="pre">'int'</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.agent.views.AgentStepInfo" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentStepInfo.max_steps">
+<span class="sig-name descname"><span class="pre">max_steps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#browser_use.agent.views.AgentStepInfo.max_steps" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.agent.views.AgentStepInfo.step_number">
+<span class="sig-name descname"><span class="pre">step_number</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#browser_use.agent.views.AgentStepInfo.step_number" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="browser_use.agent.tests.html" class="btn btn-neutral float-left" title="browser_use.agent.tests module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="browser_use.agent.tests.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="browser_use.browser.html" class="btn btn-neutral float-right" title="browser_use.browser package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>browser_use.dom.views module &mdash; browser_use v1 documentation</title>
+  <title>&lt;no title&gt; &mdash; browser_use v1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="browser_use.telemetry package" href="browser_use.telemetry.html" />
-    <link rel="prev" title="browser_use.dom.service module" href="browser_use.dom.service.html" /> 
+    <link rel="prev" title="&lt;no title&gt;" href="browser_use.dom.service.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,20 +45,27 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.controller.html">browser_use.controller package</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="browser_use.dom.html">browser_use.dom package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="browser_use.dom.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.html">browser_use.telemetry package</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -79,7 +86,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="browser_use.html">browser_use package</a></li>
           <li class="breadcrumb-item"><a href="browser_use.dom.html">browser_use.dom package</a></li>
-      <li class="breadcrumb-item active">browser_use.dom.views module</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/browser_use.dom.views.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -89,15 +96,150 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-dom-views-module">
-<h1>browser_use.dom.views module<a class="headerlink" href="#browser-use-dom-views-module" title="Link to this heading"></a></h1>
-</section>
+  <dl class="py class" id="module-browser_use.dom.views">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMBaseNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.dom.views.</span></span><span class="sig-name descname"><span class="pre">DOMBaseNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_visible</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ForwardRef</span><span class="p"><span class="pre">(</span></span><span class="s"><span class="pre">'DOMElementNode'</span></span><span class="p"><span class="pre">)</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.dom.views.DOMBaseNode" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMBaseNode.is_visible">
+<span class="sig-name descname"><span class="pre">is_visible</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#browser_use.dom.views.DOMBaseNode.is_visible" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMBaseNode.parent">
+<span class="sig-name descname"><span class="pre">parent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.dom.views.DOMBaseNode.parent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.dom.views.</span></span><span class="sig-name descname"><span class="pre">DOMElementNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_visible</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">children</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.dom.views.DOMBaseNode" title="browser_use.dom.views.DOMBaseNode"><span class="pre">DOMBaseNode</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_interactive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_top_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shadow_root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">highlight_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.dom.views.DOMElementNode" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#browser_use.dom.views.DOMBaseNode" title="browser_use.dom.views.DOMBaseNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DOMBaseNode</span></code></a></p>
+<p>xpath: the xpath of the element from the last root node (shadow root or iframe OR document if no shadow root or iframe).
+To properly reference the element we need to recursively switch the root node until we find the element (work you way up the tree with <cite>.parent</cite>)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.attributes">
+<span class="sig-name descname"><span class="pre">attributes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.attributes" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.children">
+<span class="sig-name descname"><span class="pre">children</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.dom.views.DOMBaseNode" title="browser_use.dom.views.DOMBaseNode"><span class="pre">DOMBaseNode</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.children" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.clickable_elements_to_string">
+<span class="sig-name descname"><span class="pre">clickable_elements_to_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">include_attributes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.clickable_elements_to_string" title="Link to this definition"></a></dt>
+<dd><p>Convert the processed DOM content to HTML.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.get_all_text_till_next_clickable_element">
+<span class="sig-name descname"><span class="pre">get_all_text_till_next_clickable_element</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.get_all_text_till_next_clickable_element" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.get_file_upload_element">
+<span class="sig-name descname"><span class="pre">get_file_upload_element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">check_siblings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.get_file_upload_element" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.hash">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">hash</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">HashedDomElement</span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.hash" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.highlight_index">
+<span class="sig-name descname"><span class="pre">highlight_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.highlight_index" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.is_interactive">
+<span class="sig-name descname"><span class="pre">is_interactive</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.is_interactive" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.is_top_element">
+<span class="sig-name descname"><span class="pre">is_top_element</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.is_top_element" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.shadow_root">
+<span class="sig-name descname"><span class="pre">shadow_root</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.shadow_root" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.tag_name">
+<span class="sig-name descname"><span class="pre">tag_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.tag_name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMElementNode.xpath">
+<span class="sig-name descname"><span class="pre">xpath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.dom.views.DOMElementNode.xpath" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMState">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.dom.views.</span></span><span class="sig-name descname"><span class="pre">DOMState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">browser_use.dom.views.DOMElementNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">selector_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">browser_use.dom.views.DOMElementNode</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.dom.views.DOMState" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMState.element_tree">
+<span class="sig-name descname"><span class="pre">element_tree</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></em><a class="headerlink" href="#browser_use.dom.views.DOMState.element_tree" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMState.selector_map">
+<span class="sig-name descname"><span class="pre">selector_map</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.dom.views.DOMState.selector_map" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMTextNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.dom.views.</span></span><span class="sig-name descname"><span class="pre">DOMTextNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_visible</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ForwardRef</span><span class="p"><span class="pre">(</span></span><span class="s"><span class="pre">'DOMElementNode'</span></span><span class="p"><span class="pre">)</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'TEXT_NODE'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.dom.views.DOMTextNode" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#browser_use.dom.views.DOMBaseNode" title="browser_use.dom.views.DOMBaseNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DOMBaseNode</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMTextNode.has_parent_with_highlight_index">
+<span class="sig-name descname"><span class="pre">has_parent_with_highlight_index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.dom.views.DOMTextNode.has_parent_with_highlight_index" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMTextNode.text">
+<span class="sig-name descname"><span class="pre">text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.dom.views.DOMTextNode.text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.dom.views.DOMTextNode.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'TEXT_NODE'</span></em><a class="headerlink" href="#browser_use.dom.views.DOMTextNode.type" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.dom.views.ElementTreeSerializer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.dom.views.</span></span><span class="sig-name descname"><span class="pre">ElementTreeSerializer</span></span><a class="headerlink" href="#browser_use.dom.views.ElementTreeSerializer" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.dom.views.ElementTreeSerializer.dom_element_node_to_json">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dom_element_node_to_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#browser_use.dom.views.ElementTreeSerializer.dom_element_node_to_json" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.dom.views.ElementTreeSerializer.serialize_clickable_elements">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">serialize_clickable_elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.dom.views.ElementTreeSerializer.serialize_clickable_elements" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="browser_use.dom.service.html" class="btn btn-neutral float-left" title="browser_use.dom.service module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="browser_use.dom.service.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="browser_use.telemetry.html" class="btn btn-neutral float-right" title="browser_use.telemetry package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

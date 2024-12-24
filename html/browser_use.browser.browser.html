@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>browser_use.browser.browser module &mdash; browser_use v1 documentation</title>
+  <title>&lt;no title&gt; &mdash; browser_use v1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="browser_use.browser.context module" href="browser_use.browser.context.html" />
+    <link rel="next" title="&lt;no title&gt;" href="browser_use.browser.context.html" />
     <link rel="prev" title="browser_use.browser package" href="browser_use.browser.html" /> 
 </head>
 
@@ -45,11 +45,19 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="browser_use.browser.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.controller.html">browser_use.controller package</a></li>
@@ -58,7 +66,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -79,7 +86,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="browser_use.html">browser_use package</a></li>
           <li class="breadcrumb-item"><a href="browser_use.browser.html">browser_use.browser package</a></li>
-      <li class="breadcrumb-item active">browser_use.browser.browser module</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/browser_use.browser.browser.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -89,16 +96,111 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-browser-browser-module">
-<h1>browser_use.browser.browser module<a class="headerlink" href="#browser-use-browser-browser-module" title="Link to this heading"></a></h1>
-</section>
+  <p id="module-browser_use.browser.browser">Playwright browser on steroids.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.browser.browser.Browser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.browser.browser.</span></span><span class="sig-name descname"><span class="pre">Browser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.browser.browser.BrowserConfig" title="browser_use.browser.browser.BrowserConfig"><span class="pre">BrowserConfig</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">BrowserConfig(headless=False,</span> <span class="pre">disable_security=True,</span> <span class="pre">extra_chromium_args=[],</span> <span class="pre">chrome_instance_path=None,</span> <span class="pre">wss_url=None,</span> <span class="pre">proxy=None,</span> <span class="pre">new_context_config=BrowserContextConfig(cookies_file=None,</span> <span class="pre">minimum_wait_page_load_time=0.5,</span> <span class="pre">wait_for_network_idle_page_load_time=1,</span> <span class="pre">maximum_wait_page_load_time=5,</span> <span class="pre">wait_between_actions=1,</span> <span class="pre">disable_security=False,</span> <span class="pre">browser_window_size={'width':</span> <span class="pre">1280,</span> <span class="pre">'height':</span> <span class="pre">1100},</span> <span class="pre">no_viewport=None,</span> <span class="pre">save_recording_path=None,</span> <span class="pre">trace_path=None))</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.browser.Browser" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Playwright browser on steroids.</p>
+<p>This is persistant browser factory that can spawn multiple browser contexts.
+It is recommended to use only one instance of Browser per your application (RAM usage will grow otherwise).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.browser.Browser._init">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.browser.Browser._init" title="Link to this definition"></a></dt>
+<dd><p>Initialize the browser session</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.browser.Browser._setup_browser">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_setup_browser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">playwright</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Playwright</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Browser</span></span></span><a class="headerlink" href="#browser_use.browser.browser.Browser._setup_browser" title="Link to this definition"></a></dt>
+<dd><p>Sets up and returns a Playwright Browser instance with anti-detection measures.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.browser.Browser.close">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.browser.Browser.close" title="Link to this definition"></a></dt>
+<dd><p>Close the browser instance</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.browser.Browser.get_playwright_browser">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_playwright_browser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Browser</span></span></span><a class="headerlink" href="#browser_use.browser.browser.Browser.get_playwright_browser" title="Link to this definition"></a></dt>
+<dd><p>Get a browser context</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.browser.Browser.new_context">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">new_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig" title="browser_use.browser.context.BrowserContextConfig"><span class="pre">BrowserContextConfig</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">BrowserContextConfig(cookies_file=None,</span> <span class="pre">minimum_wait_page_load_time=0.5,</span> <span class="pre">wait_for_network_idle_page_load_time=1,</span> <span class="pre">maximum_wait_page_load_time=5,</span> <span class="pre">wait_between_actions=1,</span> <span class="pre">disable_security=False,</span> <span class="pre">browser_window_size={'width':</span> <span class="pre">1280,</span> <span class="pre">'height':</span> <span class="pre">1100},</span> <span class="pre">no_viewport=None,</span> <span class="pre">save_recording_path=None,</span> <span class="pre">trace_path=None)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext" title="browser_use.browser.context.BrowserContext"><span class="pre">BrowserContext</span></a></span></span><a class="headerlink" href="#browser_use.browser.browser.Browser.new_context" title="Link to this definition"></a></dt>
+<dd><p>Create a browser context</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.browser.browser.</span></span><span class="sig-name descname"><span class="pre">BrowserConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">headless:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disable_security:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_chromium_args:</span> <span class="pre">list[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chrome_instance_path:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wss_url:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proxy:</span> <span class="pre">~playwright._impl._api_structures.ProxySettings</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_context_config:</span> <span class="pre">~browser_use.browser.context.BrowserContextConfig</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Configuration for the Browser.</p>
+<dl class="simple">
+<dt>Default values:</dt><dd><dl class="simple">
+<dt>headless: True</dt><dd><p>Whether to run browser in headless mode</p>
+</dd>
+<dt>disable_security: False</dt><dd><p>Disable browser security features</p>
+</dd>
+<dt>extra_chromium_args: []</dt><dd><p>Extra arguments to pass to the browser</p>
+</dd>
+<dt>wss_url: None</dt><dd><p>Connect to a browser instance via WebSocket</p>
+</dd>
+<dt>chrome_instance_path: None</dt><dd><p>Path to a Chrome instance to use to connect to your normal browser
+e.g. ‘/Applications/GoogleChrome.app/Contents/MacOS/GoogleChrome’</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig.chrome_instance_path">
+<span class="sig-name descname"><span class="pre">chrome_instance_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig.chrome_instance_path" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig.disable_security">
+<span class="sig-name descname"><span class="pre">disable_security</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig.disable_security" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig.extra_chromium_args">
+<span class="sig-name descname"><span class="pre">extra_chromium_args</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig.extra_chromium_args" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig.headless">
+<span class="sig-name descname"><span class="pre">headless</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig.headless" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig.new_context_config">
+<span class="sig-name descname"><span class="pre">new_context_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig" title="browser_use.browser.context.BrowserContextConfig"><span class="pre">BrowserContextConfig</span></a></em><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig.new_context_config" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig.proxy">
+<span class="sig-name descname"><span class="pre">proxy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ProxySettings</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig.proxy" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.browser.BrowserConfig.wss_url">
+<span class="sig-name descname"><span class="pre">wss_url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.browser.browser.BrowserConfig.wss_url" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="browser_use.browser.html" class="btn btn-neutral float-left" title="browser_use.browser package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="browser_use.browser.context.html" class="btn btn-neutral float-right" title="browser_use.browser.context module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="browser_use.browser.context.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

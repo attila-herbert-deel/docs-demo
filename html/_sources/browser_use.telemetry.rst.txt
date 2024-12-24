@@ -1,6 +1,11 @@
 browser\_use.telemetry package
 ==============================
 
+.. automodule:: browser_use.telemetry
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Submodules
 ----------
 
@@ -9,11 +14,3 @@ Submodules
 
    browser_use.telemetry.service
    browser_use.telemetry.views
-
-Module contents
----------------
-
-.. automodule:: browser_use.telemetry
-   :members:
-   :undoc-members:
-   :show-inheritance:

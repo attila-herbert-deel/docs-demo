@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>browser_use.browser.context module &mdash; browser_use v1 documentation</title>
+  <title>&lt;no title&gt; &mdash; browser_use v1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="browser_use.browser.views module" href="browser_use.browser.views.html" />
-    <link rel="prev" title="browser_use.browser.browser module" href="browser_use.browser.browser.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="browser_use.browser.views.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="browser_use.browser.browser.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,11 +45,19 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="browser_use.browser.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.controller.html">browser_use.controller package</a></li>
@@ -58,7 +66,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -79,7 +86,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="browser_use.html">browser_use package</a></li>
           <li class="breadcrumb-item"><a href="browser_use.browser.html">browser_use.browser package</a></li>
-      <li class="breadcrumb-item active">browser_use.browser.context module</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/browser_use.browser.context.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -89,16 +96,341 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-browser-context-module">
-<h1>browser_use.browser.context module<a class="headerlink" href="#browser-use-browser-context-module" title="Link to this heading"></a></h1>
-</section>
+  <p id="module-browser_use.browser.context">Playwright browser on steroids.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.browser.context.</span></span><span class="sig-name descname"><span class="pre">BrowserContext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">browser</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.html#browser_use.Browser" title="browser_use.Browser"><span class="pre">Browser</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.browser.context.BrowserContextConfig" title="browser_use.browser.context.BrowserContextConfig"><span class="pre">BrowserContextConfig</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">BrowserContextConfig(cookies_file=None,</span> <span class="pre">minimum_wait_page_load_time=0.5,</span> <span class="pre">wait_for_network_idle_page_load_time=1,</span> <span class="pre">maximum_wait_page_load_time=5,</span> <span class="pre">wait_between_actions=1,</span> <span class="pre">disable_security=False,</span> <span class="pre">browser_window_size={'width':</span> <span class="pre">1280,</span> <span class="pre">'height':</span> <span class="pre">1100},</span> <span class="pre">no_viewport=None,</span> <span class="pre">save_recording_path=None,</span> <span class="pre">trace_path=None)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._add_new_page_listener">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_add_new_page_listener</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BrowserContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._add_new_page_listener" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._click_element_node">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_click_element_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._click_element_node" title="Link to this definition"></a></dt>
+<dd><p>Optimized method to click an element using xpath.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._convert_simple_xpath_to_css_selector">
+<span class="sig-name descname"><span class="pre">_convert_simple_xpath_to_css_selector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._convert_simple_xpath_to_css_selector" title="Link to this definition"></a></dt>
+<dd><p>Converts simple XPath expressions to CSS selectors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._create_context">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_create_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">browser</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Browser</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._create_context" title="Link to this definition"></a></dt>
+<dd><p>Creates a new browser context with anti-detection measures and loads cookies if available.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._enhanced_css_selector_for_element">
+<span class="sig-name descname"><span class="pre">_enhanced_css_selector_for_element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._enhanced_css_selector_for_element" title="Link to this definition"></a></dt>
+<dd><p>Creates a CSS selector for a DOM element, handling various edge cases and special characters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>element</strong> – The DOM element to create a selector for</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A valid CSS selector string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._initialize_session">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_initialize_session</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._initialize_session" title="Link to this definition"></a></dt>
+<dd><p>Initialize the browser session</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._input_text_element_node">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_input_text_element_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._input_text_element_node" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._update_state">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_update_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_vision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">BrowserState</span></a></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._update_state" title="Link to this definition"></a></dt>
+<dd><p>Update and return state.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._wait_for_page_and_frames_load">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_wait_for_page_and_frames_load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout_overwrite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._wait_for_page_and_frames_load" title="Link to this definition"></a></dt>
+<dd><p>Ensures page is fully loaded before continuing.
+Waits for either network to be idle or minimum WAIT_TIME, whichever is longer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext._wait_for_stable_network">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_wait_for_stable_network</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext._wait_for_stable_network" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.close">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.close" title="Link to this definition"></a></dt>
+<dd><p>Close the browser instance</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.close_current_tab">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">close_current_tab</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.close_current_tab" title="Link to this definition"></a></dt>
+<dd><p>Close the current tab</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.create_new_tab">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_new_tab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.create_new_tab" title="Link to this definition"></a></dt>
+<dd><p>Create a new tab and optionally navigate to a URL</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.execute_javascript">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">execute_javascript</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.execute_javascript" title="Link to this definition"></a></dt>
+<dd><p>Execute JavaScript code on the page</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_current_page">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_current_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Page</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_current_page" title="Link to this definition"></a></dt>
+<dd><p>Get the current page</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_dom_element_by_index">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_dom_element_by_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_dom_element_by_index" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_element_by_index">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_element_by_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ElementHandle</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_element_by_index" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_locate_element">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_locate_element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ElementHandle</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_locate_element" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_page_html">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_page_html</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_page_html" title="Link to this definition"></a></dt>
+<dd><p>Get the current page HTML content</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_selector_map">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_selector_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_selector_map" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_session">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_session</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#browser_use.browser.context.BrowserSession" title="browser_use.browser.context.BrowserSession"><span class="pre">BrowserSession</span></a></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_session" title="Link to this definition"></a></dt>
+<dd><p>Lazy initialization of the browser and related components</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_state">
+<span class="sig-name descname"><span class="pre">get_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_vision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">BrowserState</span></a></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_state" title="Link to this definition"></a></dt>
+<dd><p>Get the current state of the browser</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.get_tabs_info">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_tabs_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.TabInfo" title="browser_use.browser.views.TabInfo"><span class="pre">TabInfo</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.get_tabs_info" title="Link to this definition"></a></dt>
+<dd><p>Get information about all tabs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.go_back">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">go_back</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.go_back" title="Link to this definition"></a></dt>
+<dd><p>Navigate back in history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.go_forward">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">go_forward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.go_forward" title="Link to this definition"></a></dt>
+<dd><p>Navigate forward in history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.is_file_uploader">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_file_uploader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_depth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_depth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.is_file_uploader" title="Link to this definition"></a></dt>
+<dd><p>Check if element or its children are file uploaders</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.navigate_to">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">navigate_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.navigate_to" title="Link to this definition"></a></dt>
+<dd><p>Navigate to a URL</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.refresh_page">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">refresh_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.refresh_page" title="Link to this definition"></a></dt>
+<dd><p>Refresh the current page</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.remove_highlights">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">remove_highlights</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.remove_highlights" title="Link to this definition"></a></dt>
+<dd><p>Removes all highlight overlays and labels created by the highlightElement function.
+Handles cases where the page might be closed or inaccessible.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.save_cookies">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_cookies</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.save_cookies" title="Link to this definition"></a></dt>
+<dd><p>Save current cookies to file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.switch_to_tab">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">switch_to_tab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">page_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.switch_to_tab" title="Link to this definition"></a></dt>
+<dd><p>Switch to a specific tab by its page_id</p>
+<p>&#64;You can also use negative indices to switch to tabs from the end (Pure pythonic way)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContext.take_screenshot">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">take_screenshot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">full_page</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContext.take_screenshot" title="Link to this definition"></a></dt>
+<dd><p>Returns a base64 encoded screenshot of the current page.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.browser.context.</span></span><span class="sig-name descname"><span class="pre">BrowserContextConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cookies_file:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum_wait_page_load_time:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_for_network_idle_page_load_time:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum_wait_page_load_time:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait_between_actions:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disable_security:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">browser_window_size:</span> <span class="pre">~browser_use.browser.context.BrowserContextWindowSize</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_viewport:</span> <span class="pre">bool</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_recording_path:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace_path:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Configuration for the BrowserContext.</p>
+<dl>
+<dt>Default values:</dt><dd><dl>
+<dt>cookies_file: None</dt><dd><p>Path to cookies file for persistence</p>
+</dd>
+<dt>disable_security: False</dt><dd><p>Disable browser security features</p>
+</dd>
+<dt>minimum_wait_page_load_time: 0.5</dt><dd><p>Minimum time to wait before getting page state for LLM input</p>
+</dd>
+<dt>wait_for_network_idle_page_load_time: 1.0</dt><dd><p>Time to wait for network requests to finish before getting page state.
+Lower values may result in incomplete page loads.</p>
+</dd>
+<dt>maximum_wait_page_load_time: 5.0</dt><dd><p>Maximum time to wait for page load before proceeding anyway</p>
+</dd>
+<dt>wait_between_actions: 1.0</dt><dd><p>Time to wait between multiple per step actions</p>
+</dd>
+<dt>browser_window_size: {</dt><dd><blockquote>
+<div><p>‘width’: 1280,
+‘height’: 1100,</p>
+</div></blockquote>
+<p>}
+Default browser window size</p>
+</dd>
+<dt>no_viewport: False</dt><dd><p>Disable viewport</p>
+</dd>
+<dt>save_recording_path: None</dt><dd><p>Path to save video recordings</p>
+</dd>
+<dt>trace_path: None</dt><dd><p>Path to save trace files. It will auto name the file with the TRACE_PATH/{context_id}.zip</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.browser_window_size">
+<span class="sig-name descname"><span class="pre">browser_window_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#browser_use.browser.context.BrowserContextWindowSize" title="browser_use.browser.context.BrowserContextWindowSize"><span class="pre">BrowserContextWindowSize</span></a></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.browser_window_size" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.cookies_file">
+<span class="sig-name descname"><span class="pre">cookies_file</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.cookies_file" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.disable_security">
+<span class="sig-name descname"><span class="pre">disable_security</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.disable_security" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.maximum_wait_page_load_time">
+<span class="sig-name descname"><span class="pre">maximum_wait_page_load_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.maximum_wait_page_load_time" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.minimum_wait_page_load_time">
+<span class="sig-name descname"><span class="pre">minimum_wait_page_load_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.minimum_wait_page_load_time" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.no_viewport">
+<span class="sig-name descname"><span class="pre">no_viewport</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.no_viewport" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.save_recording_path">
+<span class="sig-name descname"><span class="pre">save_recording_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.save_recording_path" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.trace_path">
+<span class="sig-name descname"><span class="pre">trace_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.trace_path" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.wait_between_actions">
+<span class="sig-name descname"><span class="pre">wait_between_actions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.wait_between_actions" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextConfig.wait_for_network_idle_page_load_time">
+<span class="sig-name descname"><span class="pre">wait_for_network_idle_page_load_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextConfig.wait_for_network_idle_page_load_time" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextWindowSize">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.browser.context.</span></span><span class="sig-name descname"><span class="pre">BrowserContextWindowSize</span></span><a class="headerlink" href="#browser_use.browser.context.BrowserContextWindowSize" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextWindowSize.height">
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextWindowSize.height" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserContextWindowSize.width">
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserContextWindowSize.width" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserSession">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.browser.context.</span></span><span class="sig-name descname"><span class="pre">BrowserSession</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">playwright.async_api._generated.BrowserContext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_page</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">playwright.async_api._generated.Page</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cached_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">browser_use.browser.views.BrowserState</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.browser.context.BrowserSession" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserSession.cached_state">
+<span class="sig-name descname"><span class="pre">cached_state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">BrowserState</span></a></em><a class="headerlink" href="#browser_use.browser.context.BrowserSession.cached_state" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserSession.context">
+<span class="sig-name descname"><span class="pre">context</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">BrowserContext</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserSession.context" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.browser.context.BrowserSession.current_page">
+<span class="sig-name descname"><span class="pre">current_page</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Page</span></em><a class="headerlink" href="#browser_use.browser.context.BrowserSession.current_page" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="browser_use.browser.browser.html" class="btn btn-neutral float-left" title="browser_use.browser.browser module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="browser_use.browser.views.html" class="btn btn-neutral float-right" title="browser_use.browser.views module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="browser_use.browser.browser.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="browser_use.browser.views.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

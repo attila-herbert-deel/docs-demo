@@ -1,6 +1,3 @@
-browser\_use.telemetry.service module
-=====================================
-
 .. automodule:: browser_use.telemetry.service
    :members:
    :undoc-members:

@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="browser_use.dom.service module" href="browser_use.dom.service.html" />
-    <link rel="prev" title="browser_use.controller.views module" href="browser_use.controller.views.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="browser_use.dom.service.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="browser_use.controller.views.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,20 +45,27 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.controller.html">browser_use.controller package</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">browser_use.dom package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.html">browser_use.telemetry package</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -88,19 +95,57 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-dom-package">
-<h1>browser_use.dom package<a class="headerlink" href="#browser-use-dom-package" title="Link to this heading"></a></h1>
+  <section id="module-browser_use.dom">
+<span id="browser-use-dom-package"></span><h1>browser_use.dom package<a class="headerlink" href="#module-browser_use.dom" title="Link to this heading"></a></h1>
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.service.html">browser_use.dom.service module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.views.html">browser_use.dom.views module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.service.html"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService._build_dom_tree"><code class="docutils literal notranslate"><span class="pre">DomService._build_dom_tree()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService._create_selector_map"><code class="docutils literal notranslate"><span class="pre">DomService._create_selector_map()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService._parse_node"><code class="docutils literal notranslate"><span class="pre">DomService._parse_node()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService.get_clickable_elements"><code class="docutils literal notranslate"><span class="pre">DomService.get_clickable_elements()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.views.html"><code class="docutils literal notranslate"><span class="pre">DOMBaseNode</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMBaseNode.is_visible"><code class="docutils literal notranslate"><span class="pre">DOMBaseNode.is_visible</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMBaseNode.parent"><code class="docutils literal notranslate"><span class="pre">DOMBaseNode.parent</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode"><code class="docutils literal notranslate"><span class="pre">DOMElementNode</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.attributes"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.attributes</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.children"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.children</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.clickable_elements_to_string"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.clickable_elements_to_string()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.get_all_text_till_next_clickable_element"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.get_all_text_till_next_clickable_element()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.get_file_upload_element"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.get_file_upload_element()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.hash"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.hash</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.highlight_index"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.highlight_index</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.is_interactive"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.is_interactive</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.is_top_element"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.is_top_element</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.shadow_root"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.shadow_root</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.tag_name"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.tag_name</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.xpath"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.xpath</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMState"><code class="docutils literal notranslate"><span class="pre">DOMState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMState.element_tree"><code class="docutils literal notranslate"><span class="pre">DOMState.element_tree</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMState.selector_map"><code class="docutils literal notranslate"><span class="pre">DOMState.selector_map</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode"><code class="docutils literal notranslate"><span class="pre">DOMTextNode</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode.has_parent_with_highlight_index"><code class="docutils literal notranslate"><span class="pre">DOMTextNode.has_parent_with_highlight_index()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode.text"><code class="docutils literal notranslate"><span class="pre">DOMTextNode.text</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode.type"><code class="docutils literal notranslate"><span class="pre">DOMTextNode.type</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.ElementTreeSerializer"><code class="docutils literal notranslate"><span class="pre">ElementTreeSerializer</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.ElementTreeSerializer.dom_element_node_to_json"><code class="docutils literal notranslate"><span class="pre">ElementTreeSerializer.dom_element_node_to_json()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.ElementTreeSerializer.serialize_clickable_elements"><code class="docutils literal notranslate"><span class="pre">ElementTreeSerializer.serialize_clickable_elements()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
-</section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
 </section>
 </section>
 
@@ -108,8 +153,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="browser_use.controller.views.html" class="btn btn-neutral float-left" title="browser_use.controller.views module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="browser_use.dom.service.html" class="btn btn-neutral float-right" title="browser_use.dom.service module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="browser_use.controller.views.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="browser_use.dom.service.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

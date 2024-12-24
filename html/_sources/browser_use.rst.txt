@@ -1,6 +1,11 @@
 browser\_use package
 ====================
 
+.. automodule:: browser_use
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Subpackages
 -----------
 
@@ -21,11 +26,3 @@ Submodules
 
    browser_use.logging_config
    browser_use.utils
-
-Module contents
----------------
-
-.. automodule:: browser_use
-   :members:
-   :undoc-members:
-   :show-inheritance:

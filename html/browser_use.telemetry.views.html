@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>browser_use.telemetry.views module &mdash; browser_use v1 documentation</title>
+  <title>&lt;no title&gt; &mdash; browser_use v1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="browser_use.logging_config module" href="browser_use.logging_config.html" />
-    <link rel="prev" title="browser_use.telemetry.service module" href="browser_use.telemetry.service.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="browser_use.logging_config.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="browser_use.telemetry.service.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,6 +45,15 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a></li>
@@ -52,13 +61,11 @@
 <li class="toctree-l3"><a class="reference internal" href="browser_use.dom.html">browser_use.dom package</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="browser_use.telemetry.html">browser_use.telemetry package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="browser_use.telemetry.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -79,7 +86,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="browser_use.html">browser_use package</a></li>
           <li class="breadcrumb-item"><a href="browser_use.telemetry.html">browser_use.telemetry package</a></li>
-      <li class="breadcrumb-item active">browser_use.telemetry.views module</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/browser_use.telemetry.views.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -89,16 +96,164 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-telemetry-views-module">
-<h1>browser_use.telemetry.views module<a class="headerlink" href="#browser-use-telemetry-views-module" title="Link to this heading"></a></h1>
-</section>
+  <dl class="py class" id="module-browser_use.telemetry.views">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.telemetry.views.</span></span><span class="sig-name descname"><span class="pre">AgentEndTelemetryEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">success</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'agent_end'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#browser_use.telemetry.views.BaseTelemetryEvent" title="browser_use.telemetry.views.BaseTelemetryEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTelemetryEvent</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent.agent_id">
+<span class="sig-name descname"><span class="pre">agent_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent.agent_id" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent.error">
+<span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent.error" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'agent_end'</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent.steps">
+<span class="sig-name descname"><span class="pre">steps</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent.steps" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent.success">
+<span class="sig-name descname"><span class="pre">success</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent.success" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentEndTelemetryEvent.task">
+<span class="sig-name descname"><span class="pre">task</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentEndTelemetryEvent.task" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentRunTelemetryEvent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.telemetry.views.</span></span><span class="sig-name descname"><span class="pre">AgentRunTelemetryEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'agent_run'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.telemetry.views.AgentRunTelemetryEvent" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#browser_use.telemetry.views.BaseTelemetryEvent" title="browser_use.telemetry.views.BaseTelemetryEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTelemetryEvent</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentRunTelemetryEvent._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentRunTelemetryEvent._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentRunTelemetryEvent.agent_id">
+<span class="sig-name descname"><span class="pre">agent_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentRunTelemetryEvent.agent_id" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentRunTelemetryEvent.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'agent_run'</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentRunTelemetryEvent.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentRunTelemetryEvent.task">
+<span class="sig-name descname"><span class="pre">task</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentRunTelemetryEvent.task" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentStepErrorTelemetryEvent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.telemetry.views.</span></span><span class="sig-name descname"><span class="pre">AgentStepErrorTelemetryEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'agent_step_error'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.telemetry.views.AgentStepErrorTelemetryEvent" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#browser_use.telemetry.views.BaseTelemetryEvent" title="browser_use.telemetry.views.BaseTelemetryEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTelemetryEvent</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentStepErrorTelemetryEvent._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentStepErrorTelemetryEvent._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentStepErrorTelemetryEvent.agent_id">
+<span class="sig-name descname"><span class="pre">agent_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentStepErrorTelemetryEvent.agent_id" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentStepErrorTelemetryEvent.error">
+<span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentStepErrorTelemetryEvent.error" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.AgentStepErrorTelemetryEvent.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'agent_step_error'</span></em><a class="headerlink" href="#browser_use.telemetry.views.AgentStepErrorTelemetryEvent.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.BaseTelemetryEvent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.telemetry.views.</span></span><span class="sig-name descname"><span class="pre">BaseTelemetryEvent</span></span><a class="headerlink" href="#browser_use.telemetry.views.BaseTelemetryEvent" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.BaseTelemetryEvent._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.telemetry.views.BaseTelemetryEvent._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.BaseTelemetryEvent.name">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.BaseTelemetryEvent.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.BaseTelemetryEvent.properties">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">properties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.telemetry.views.BaseTelemetryEvent.properties" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.telemetry.views.</span></span><span class="sig-name descname"><span class="pre">ControllerRegisteredFunctionsTelemetryEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registered_functions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.telemetry.views.RegisteredFunction" title="browser_use.telemetry.views.RegisteredFunction"><span class="pre">browser_use.telemetry.views.RegisteredFunction</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'controller_registered_functions'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#browser_use.telemetry.views.BaseTelemetryEvent" title="browser_use.telemetry.views.BaseTelemetryEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTelemetryEvent</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'controller_registered_functions'</span></em><a class="headerlink" href="#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent.registered_functions">
+<span class="sig-name descname"><span class="pre">registered_functions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.telemetry.views.RegisteredFunction" title="browser_use.telemetry.views.RegisteredFunction"><span class="pre">RegisteredFunction</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent.registered_functions" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.RegisteredFunction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.telemetry.views.</span></span><span class="sig-name descname"><span class="pre">RegisteredFunction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.telemetry.views.RegisteredFunction" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.RegisteredFunction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#browser_use.telemetry.views.RegisteredFunction.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.telemetry.views.RegisteredFunction.params">
+<span class="sig-name descname"><span class="pre">params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.telemetry.views.RegisteredFunction.params" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="browser_use.telemetry.service.html" class="btn btn-neutral float-left" title="browser_use.telemetry.service module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="browser_use.logging_config.html" class="btn btn-neutral float-right" title="browser_use.logging_config module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="browser_use.telemetry.service.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="browser_use.logging_config.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

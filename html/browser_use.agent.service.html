@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>browser_use.agent.service module &mdash; browser_use v1 documentation</title>
+  <title>&lt;no title&gt; &mdash; browser_use v1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="browser_use.agent.tests module" href="browser_use.agent.tests.html" />
-    <link rel="prev" title="browser_use.agent.prompts module" href="browser_use.agent.prompts.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="browser_use.agent.tests.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="browser_use.agent.prompts.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,10 +45,18 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="browser_use.agent.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a></li>
@@ -58,7 +66,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -79,7 +86,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="browser_use.html">browser_use package</a></li>
           <li class="breadcrumb-item"><a href="browser_use.agent.html">browser_use.agent package</a></li>
-      <li class="breadcrumb-item active">browser_use.agent.service module</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/browser_use.agent.service.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -89,16 +96,179 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-agent-service-module">
-<h1>browser_use.agent.service module<a class="headerlink" href="#browser-use-agent-service-module" title="Link to this heading"></a></h1>
-</section>
+  <dl class="py class" id="module-browser_use.agent.service">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.agent.service.</span></span><span class="sig-name descname"><span class="pre">Agent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">task:</span> <span class="pre">str,</span> <span class="pre">llm:</span> <span class="pre">~langchain_core.language_models.chat_models.BaseChatModel,</span> <span class="pre">browser:</span> <span class="pre">~browser_use.browser.browser.Browser</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">browser_context:</span> <span class="pre">~browser_use.browser.context.BrowserContext</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">controller:</span> <span class="pre">~browser_use.controller.service.Controller</span> <span class="pre">=</span> <span class="pre">&lt;browser_use.controller.service.Controller</span> <span class="pre">object&gt;,</span> <span class="pre">use_vision:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True,</span> <span class="pre">save_conversation_path:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">max_failures:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">5,</span> <span class="pre">retry_delay:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">system_prompt_class:</span> <span class="pre">~typing.Type[~browser_use.agent.prompts.SystemPrompt]</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'browser_use.agent.prompts.SystemPrompt'&gt;,</span> <span class="pre">max_input_tokens:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">128000,</span> <span class="pre">validate_output:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">include_attributes:</span> <span class="pre">list[str]</span> <span class="pre">=</span> <span class="pre">['title',</span> <span class="pre">'type',</span> <span class="pre">'name',</span> <span class="pre">'role',</span> <span class="pre">'tabindex',</span> <span class="pre">'aria-label',</span> <span class="pre">'placeholder',</span> <span class="pre">'value',</span> <span class="pre">'alt',</span> <span class="pre">'aria-expanded'],</span> <span class="pre">max_error_length:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">400,</span> <span class="pre">max_actions_per_step:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.agent.service.Agent" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._add_overlay_to_image">
+<span class="sig-name descname"><span class="pre">_add_overlay_to_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goal_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regular_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Image</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Image</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._add_overlay_to_image" title="Link to this definition"></a></dt>
+<dd><p>Add step number and goal overlay to an image.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._create_task_frame">
+<span class="sig-name descname"><span class="pre">_create_task_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_screenshot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regular_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Image</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_spacing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Image</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._create_task_frame" title="Link to this definition"></a></dt>
+<dd><p>Create initial frame showing the task.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._execute_history_step">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_execute_history_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">history_item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory" title="browser_use.agent.views.AgentHistory"><span class="pre">AgentHistory</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._execute_history_step" title="Link to this definition"></a></dt>
+<dd><p>Execute a single step from history with element validation</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._handle_step_error">
+<span class="sig-name descname"><span class="pre">_handle_step_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Exception</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._handle_step_error" title="Link to this definition"></a></dt>
+<dd><p>Handle all types of errors that can occur during a step</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._log_response">
+<span class="sig-name descname"><span class="pre">_log_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._log_response" title="Link to this definition"></a></dt>
+<dd><p>Log the model’s response</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._make_history_item">
+<span class="sig-name descname"><span class="pre">_make_history_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">BrowserState</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._make_history_item" title="Link to this definition"></a></dt>
+<dd><p>Create and store history item</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._save_conversation">
+<span class="sig-name descname"><span class="pre">_save_conversation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._save_conversation" title="Link to this definition"></a></dt>
+<dd><p>Save conversation history to file if path is specified</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._setup_action_models">
+<span class="sig-name descname"><span class="pre">_setup_action_models</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._setup_action_models" title="Link to this definition"></a></dt>
+<dd><p>Setup dynamic action models from controller’s registry</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._too_many_failures">
+<span class="sig-name descname"><span class="pre">_too_many_failures</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._too_many_failures" title="Link to this definition"></a></dt>
+<dd><p>Check if we should stop due to too many failures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._update_action_indices">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_update_action_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">historical_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DOMHistoryElement</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.html#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">BrowserState</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.html#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._update_action_indices" title="Link to this definition"></a></dt>
+<dd><p>Update action indices based on current page state.
+Returns updated action or None if element cannot be found.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._validate_output">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_validate_output</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._validate_output" title="Link to this definition"></a></dt>
+<dd><p>Validate the output of the last action is what the user wanted</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._wrap_text">
+<span class="sig-name descname"><span class="pre">_wrap_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._wrap_text" title="Link to this definition"></a></dt>
+<dd><p>Wrap text to fit within a given width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – Text to wrap</p></li>
+<li><p><strong>font</strong> – Font to use for text</p></li>
+<li><p><strong>max_width</strong> – Maximum width in pixels</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Wrapped text with newlines</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._write_messages_to_file">
+<span class="sig-name descname"><span class="pre">_write_messages_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._write_messages_to_file" title="Link to this definition"></a></dt>
+<dd><p>Write messages to conversation file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent._write_response_to_file">
+<span class="sig-name descname"><span class="pre">_write_response_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent._write_response_to_file" title="Link to this definition"></a></dt>
+<dd><p>Write model response to conversation file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent.create_history_gif">
+<span class="sig-name descname"><span class="pre">create_history_gif</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'agent_history.gif'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_goals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_logo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">56</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goal_font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">44</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_spacing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent.create_history_gif" title="Link to this definition"></a></dt>
+<dd><p>Create a GIF from the agent’s history with overlaid task and goal text.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent.get_next_action">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_next_action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a></span></span><a class="headerlink" href="#browser_use.agent.service.Agent.get_next_action" title="Link to this definition"></a></dt>
+<dd><p>Get next action from LLM based on current state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent.load_and_rerun">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_and_rerun</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">history_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent.load_and_rerun" title="Link to this definition"></a></dt>
+<dd><p>Load history from file and rerun it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>history_file</strong> – Path to the history file</p></li>
+<li><p><strong>**kwargs</strong> – Additional arguments passed to rerun_history</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent.rerun_history">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rerun_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">history</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList" title="browser_use.agent.views.AgentHistoryList"><span class="pre">AgentHistoryList</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_retries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_failures</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay_between_actions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent.rerun_history" title="Link to this definition"></a></dt>
+<dd><p>Rerun a saved history of actions with error handling and retry logic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>history</strong> – The history to replay</p></li>
+<li><p><strong>max_retries</strong> – Maximum number of retries per action</p></li>
+<li><p><strong>skip_failures</strong> – Whether to skip failed actions or stop execution</p></li>
+<li><p><strong>delay_between_actions</strong> – Delay between actions in seconds</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of action results</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent.run">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList" title="browser_use.agent.views.AgentHistoryList"><span class="pre">AgentHistoryList</span></a></span></span><a class="headerlink" href="#browser_use.agent.service.Agent.run" title="Link to this definition"></a></dt>
+<dd><p>Execute the task with maximum number of steps</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent.save_history">
+<span class="sig-name descname"><span class="pre">save_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent.save_history" title="Link to this definition"></a></dt>
+<dd><p>Save the history to a file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.agent.service.Agent.step">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">step_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo" title="browser_use.agent.views.AgentStepInfo"><span class="pre">AgentStepInfo</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.agent.service.Agent.step" title="Link to this definition"></a></dt>
+<dd><p>Execute one step of the task</p>
+</dd></dl>
+
+</dd></dl>
+
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="browser_use.agent.prompts.html" class="btn btn-neutral float-left" title="browser_use.agent.prompts module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="browser_use.agent.tests.html" class="btn btn-neutral float-right" title="browser_use.agent.tests module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="browser_use.agent.prompts.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="browser_use.agent.tests.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

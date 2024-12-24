@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>browser_use.logging_config module &mdash; browser_use v1 documentation</title>
+  <title>&lt;no title&gt; &mdash; browser_use v1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="browser_use.utils module" href="browser_use.utils.html" />
-    <link rel="prev" title="browser_use.telemetry.views module" href="browser_use.telemetry.views.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="browser_use.utils.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="browser_use.telemetry.views.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,13 +45,24 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#submodules">Submodules</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">browser_use.logging_config module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html">browser_use.utils module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">addLoggingLevel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.logging_config.setup_logging"><code class="docutils literal notranslate"><span class="pre">setup_logging()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html"><code class="docutils literal notranslate"><span class="pre">singleton()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html#browser_use.utils.time_execution_async"><code class="docutils literal notranslate"><span class="pre">time_execution_async()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html#browser_use.utils.time_execution_sync"><code class="docutils literal notranslate"><span class="pre">time_execution_sync()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -71,7 +82,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="browser_use.html">browser_use package</a></li>
-      <li class="breadcrumb-item active">browser_use.logging_config module</li>
+      <li class="breadcrumb-item active">&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/browser_use.logging_config.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,16 +92,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-logging-config-module">
-<h1>browser_use.logging_config module<a class="headerlink" href="#browser-use-logging-config-module" title="Link to this heading"></a></h1>
-</section>
+  <dl class="py function" id="module-browser_use.logging_config">
+<dt class="sig sig-object py" id="browser_use.logging_config.addLoggingLevel">
+<span class="sig-prename descclassname"><span class="pre">browser_use.logging_config.</span></span><span class="sig-name descname"><span class="pre">addLoggingLevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">levelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">levelNum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.logging_config.addLoggingLevel" title="Link to this definition"></a></dt>
+<dd><p>Comprehensively adds a new logging level to the <cite>logging</cite> module and the
+currently configured logging class.</p>
+<p><cite>levelName</cite> becomes an attribute of the <cite>logging</cite> module with the value
+<cite>levelNum</cite>. <cite>methodName</cite> becomes a convenience method for both <cite>logging</cite>
+itself and the class returned by <cite>logging.getLoggerClass()</cite> (usually just
+<cite>logging.Logger</cite>). If <cite>methodName</cite> is not specified, <cite>levelName.lower()</cite> is
+used.</p>
+<p>To avoid accidental clobberings of existing attributes, this method will
+raise an <cite>AttributeError</cite> if the level name is already an attribute of the
+<cite>logging</cite> module or if the method name is already present</p>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addLoggingLevel</span><span class="p">(</span><span class="s1">&#39;TRACE&#39;</span><span class="p">,</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="s1">&#39;TRACE&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;that worked&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logging</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;so did this&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logging</span><span class="o">.</span><span class="n">TRACE</span>
+<span class="go">5</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="browser_use.logging_config.setup_logging">
+<span class="sig-prename descclassname"><span class="pre">browser_use.logging_config.</span></span><span class="sig-name descname"><span class="pre">setup_logging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.logging_config.setup_logging" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="browser_use.telemetry.views.html" class="btn btn-neutral float-left" title="browser_use.telemetry.views module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="browser_use.utils.html" class="btn btn-neutral float-right" title="browser_use.utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="browser_use.telemetry.views.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="browser_use.utils.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

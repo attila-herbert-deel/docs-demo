@@ -45,6 +45,107 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">browser_use package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionModel._abc_impl"><code class="docutils literal notranslate"><span class="pre">ActionModel._abc_impl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionModel.get_index"><code class="docutils literal notranslate"><span class="pre">ActionModel.get_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionModel.model_config"><code class="docutils literal notranslate"><span class="pre">ActionModel.model_config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionModel.set_index"><code class="docutils literal notranslate"><span class="pre">ActionModel.set_index()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionResult._abc_impl"><code class="docutils literal notranslate"><span class="pre">ActionResult._abc_impl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionResult.error"><code class="docutils literal notranslate"><span class="pre">ActionResult.error</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionResult.extracted_content"><code class="docutils literal notranslate"><span class="pre">ActionResult.extracted_content</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionResult.include_in_memory"><code class="docutils literal notranslate"><span class="pre">ActionResult.include_in_memory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionResult.is_done"><code class="docutils literal notranslate"><span class="pre">ActionResult.is_done</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.ActionResult.model_config"><code class="docutils literal notranslate"><span class="pre">ActionResult.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._add_overlay_to_image"><code class="docutils literal notranslate"><span class="pre">Agent._add_overlay_to_image()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._create_task_frame"><code class="docutils literal notranslate"><span class="pre">Agent._create_task_frame()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._execute_history_step"><code class="docutils literal notranslate"><span class="pre">Agent._execute_history_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._handle_step_error"><code class="docutils literal notranslate"><span class="pre">Agent._handle_step_error()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._log_response"><code class="docutils literal notranslate"><span class="pre">Agent._log_response()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._make_history_item"><code class="docutils literal notranslate"><span class="pre">Agent._make_history_item()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._save_conversation"><code class="docutils literal notranslate"><span class="pre">Agent._save_conversation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._setup_action_models"><code class="docutils literal notranslate"><span class="pre">Agent._setup_action_models()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._too_many_failures"><code class="docutils literal notranslate"><span class="pre">Agent._too_many_failures()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._update_action_indices"><code class="docutils literal notranslate"><span class="pre">Agent._update_action_indices()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._validate_output"><code class="docutils literal notranslate"><span class="pre">Agent._validate_output()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._wrap_text"><code class="docutils literal notranslate"><span class="pre">Agent._wrap_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._write_messages_to_file"><code class="docutils literal notranslate"><span class="pre">Agent._write_messages_to_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent._write_response_to_file"><code class="docutils literal notranslate"><span class="pre">Agent._write_response_to_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent.create_history_gif"><code class="docutils literal notranslate"><span class="pre">Agent.create_history_gif()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent.get_next_action"><code class="docutils literal notranslate"><span class="pre">Agent.get_next_action()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent.load_and_rerun"><code class="docutils literal notranslate"><span class="pre">Agent.load_and_rerun()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent.rerun_history"><code class="docutils literal notranslate"><span class="pre">Agent.rerun_history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent.run"><code class="docutils literal notranslate"><span class="pre">Agent.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent.save_history"><code class="docutils literal notranslate"><span class="pre">Agent.save_history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Agent.step"><code class="docutils literal notranslate"><span class="pre">Agent.step()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList._abc_impl</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.action_names"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.action_names()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.action_results"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.action_results()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.errors"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.errors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.extracted_content"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.extracted_content()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.final_result"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.final_result()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.has_errors"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.has_errors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.history"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.history</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.is_done"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.is_done()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.last_action"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.last_action()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.load_from_file"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.load_from_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.model_actions"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_actions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.model_actions_filtered"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_actions_filtered()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.model_config"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.model_dump"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_dump()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.model_outputs"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_outputs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.model_thoughts"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_thoughts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.save_to_file"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.save_to_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.screenshots"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.screenshots()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.AgentHistoryList.urls"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.urls()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Browser._init"><code class="docutils literal notranslate"><span class="pre">Browser._init()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Browser._setup_browser"><code class="docutils literal notranslate"><span class="pre">Browser._setup_browser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Browser.close"><code class="docutils literal notranslate"><span class="pre">Browser.close()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Browser.get_playwright_browser"><code class="docutils literal notranslate"><span class="pre">Browser.get_playwright_browser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Browser.new_context"><code class="docutils literal notranslate"><span class="pre">Browser.new_context()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.BrowserConfig.chrome_instance_path"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.chrome_instance_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.BrowserConfig.disable_security"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.disable_security</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.BrowserConfig.extra_chromium_args"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.extra_chromium_args</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.BrowserConfig.headless"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.headless</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.BrowserConfig.new_context_config"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.new_context_config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.BrowserConfig.proxy"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.proxy</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.BrowserConfig.wss_url"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.wss_url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Controller._register_default_actions"><code class="docutils literal notranslate"><span class="pre">Controller._register_default_actions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Controller.act"><code class="docutils literal notranslate"><span class="pre">Controller.act()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Controller.action"><code class="docutils literal notranslate"><span class="pre">Controller.action()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.Controller.multi_act"><code class="docutils literal notranslate"><span class="pre">Controller.multi_act()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.DomService._build_dom_tree"><code class="docutils literal notranslate"><span class="pre">DomService._build_dom_tree()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.DomService._create_selector_map"><code class="docutils literal notranslate"><span class="pre">DomService._create_selector_map()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.DomService._parse_node"><code class="docutils literal notranslate"><span class="pre">DomService._parse_node()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.DomService.get_clickable_elements"><code class="docutils literal notranslate"><span class="pre">DomService.get_clickable_elements()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.SystemPrompt.get_system_message"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.get_system_message()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.SystemPrompt.important_rules"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.important_rules()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser_use.SystemPrompt.input_format"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.input_format()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a></li>
@@ -54,11 +155,13 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.logging_config.html">browser_use.logging_config module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html">browser_use.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.logging_config.html"><code class="docutils literal notranslate"><span class="pre">addLoggingLevel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.logging_config.html#browser_use.logging_config.setup_logging"><code class="docutils literal notranslate"><span class="pre">setup_logging()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html"><code class="docutils literal notranslate"><span class="pre">singleton()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html#browser_use.utils.time_execution_async"><code class="docutils literal notranslate"><span class="pre">time_execution_async()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.utils.html#browser_use.utils.time_execution_sync"><code class="docutils literal notranslate"><span class="pre">time_execution_sync()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -87,58 +190,957 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-package">
-<h1>browser_use package<a class="headerlink" href="#browser-use-package" title="Link to this heading"></a></h1>
+  <section id="module-browser_use">
+<span id="browser-use-package"></span><h1>browser_use package<a class="headerlink" href="#module-browser_use" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.ActionModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">ActionModel</span></span><a class="headerlink" href="#browser_use.ActionModel" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Base model for dynamically created action models</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionModel._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.ActionModel._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.ActionModel.get_index">
+<span class="sig-name descname"><span class="pre">get_index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.ActionModel.get_index" title="Link to this definition"></a></dt>
+<dd><p>Get the index of the action</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionModel.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'arbitrary_types_allowed':</span> <span class="pre">True}</span></em><a class="headerlink" href="#browser_use.ActionModel.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.ActionModel.set_index">
+<span class="sig-name descname"><span class="pre">set_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.ActionModel.set_index" title="Link to this definition"></a></dt>
+<dd><p>Overwrite the index of the action</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.ActionResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">ActionResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_done</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extracted_content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_in_memory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.ActionResult" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Result of executing an action</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionResult._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.ActionResult._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionResult.error">
+<span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.ActionResult.error" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionResult.extracted_content">
+<span class="sig-name descname"><span class="pre">extracted_content</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.ActionResult.extracted_content" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionResult.include_in_memory">
+<span class="sig-name descname"><span class="pre">include_in_memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#browser_use.ActionResult.include_in_memory" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionResult.is_done">
+<span class="sig-name descname"><span class="pre">is_done</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.ActionResult.is_done" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.ActionResult.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#browser_use.ActionResult.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.Agent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">Agent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">task:</span> <span class="pre">str,</span> <span class="pre">llm:</span> <span class="pre">~langchain_core.language_models.chat_models.BaseChatModel,</span> <span class="pre">browser:</span> <span class="pre">~browser_use.browser.browser.Browser</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">browser_context:</span> <span class="pre">~browser_use.browser.context.BrowserContext</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">controller:</span> <span class="pre">~browser_use.controller.service.Controller</span> <span class="pre">=</span> <span class="pre">&lt;browser_use.controller.service.Controller</span> <span class="pre">object&gt;,</span> <span class="pre">use_vision:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True,</span> <span class="pre">save_conversation_path:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">max_failures:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">5,</span> <span class="pre">retry_delay:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">system_prompt_class:</span> <span class="pre">~typing.Type[~browser_use.agent.prompts.SystemPrompt]</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'browser_use.agent.prompts.SystemPrompt'&gt;,</span> <span class="pre">max_input_tokens:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">128000,</span> <span class="pre">validate_output:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">include_attributes:</span> <span class="pre">list[str]</span> <span class="pre">=</span> <span class="pre">['title',</span> <span class="pre">'type',</span> <span class="pre">'name',</span> <span class="pre">'role',</span> <span class="pre">'tabindex',</span> <span class="pre">'aria-label',</span> <span class="pre">'placeholder',</span> <span class="pre">'value',</span> <span class="pre">'alt',</span> <span class="pre">'aria-expanded'],</span> <span class="pre">max_error_length:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">400,</span> <span class="pre">max_actions_per_step:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.Agent" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._add_overlay_to_image">
+<span class="sig-name descname"><span class="pre">_add_overlay_to_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goal_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regular_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Image</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Image</span></span></span><a class="headerlink" href="#browser_use.Agent._add_overlay_to_image" title="Link to this definition"></a></dt>
+<dd><p>Add step number and goal overlay to an image.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._create_task_frame">
+<span class="sig-name descname"><span class="pre">_create_task_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_screenshot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regular_font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Image</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_spacing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Image</span></span></span><a class="headerlink" href="#browser_use.Agent._create_task_frame" title="Link to this definition"></a></dt>
+<dd><p>Create initial frame showing the task.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._execute_history_step">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_execute_history_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">history_item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory" title="browser_use.agent.views.AgentHistory"><span class="pre">AgentHistory</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.Agent._execute_history_step" title="Link to this definition"></a></dt>
+<dd><p>Execute a single step from history with element validation</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._handle_step_error">
+<span class="sig-name descname"><span class="pre">_handle_step_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Exception</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.Agent._handle_step_error" title="Link to this definition"></a></dt>
+<dd><p>Handle all types of errors that can occur during a step</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._log_response">
+<span class="sig-name descname"><span class="pre">_log_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent._log_response" title="Link to this definition"></a></dt>
+<dd><p>Log the model’s response</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._make_history_item">
+<span class="sig-name descname"><span class="pre">_make_history_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">BrowserState</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent._make_history_item" title="Link to this definition"></a></dt>
+<dd><p>Create and store history item</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._save_conversation">
+<span class="sig-name descname"><span class="pre">_save_conversation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent._save_conversation" title="Link to this definition"></a></dt>
+<dd><p>Save conversation history to file if path is specified</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._setup_action_models">
+<span class="sig-name descname"><span class="pre">_setup_action_models</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent._setup_action_models" title="Link to this definition"></a></dt>
+<dd><p>Setup dynamic action models from controller’s registry</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._too_many_failures">
+<span class="sig-name descname"><span class="pre">_too_many_failures</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.Agent._too_many_failures" title="Link to this definition"></a></dt>
+<dd><p>Check if we should stop due to too many failures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._update_action_indices">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_update_action_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">historical_element</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DOMHistoryElement</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState" title="browser_use.browser.views.BrowserState"><span class="pre">BrowserState</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent._update_action_indices" title="Link to this definition"></a></dt>
+<dd><p>Update action indices based on current page state.
+Returns updated action or None if element cannot be found.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._validate_output">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_validate_output</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.Agent._validate_output" title="Link to this definition"></a></dt>
+<dd><p>Validate the output of the last action is what the user wanted</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._wrap_text">
+<span class="sig-name descname"><span class="pre">_wrap_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">FreeTypeFont</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.Agent._wrap_text" title="Link to this definition"></a></dt>
+<dd><p>Wrap text to fit within a given width.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – Text to wrap</p></li>
+<li><p><strong>font</strong> – Font to use for text</p></li>
+<li><p><strong>max_width</strong> – Maximum width in pixels</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Wrapped text with newlines</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._write_messages_to_file">
+<span class="sig-name descname"><span class="pre">_write_messages_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent._write_messages_to_file" title="Link to this definition"></a></dt>
+<dd><p>Write messages to conversation file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent._write_response_to_file">
+<span class="sig-name descname"><span class="pre">_write_response_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent._write_response_to_file" title="Link to this definition"></a></dt>
+<dd><p>Write model response to conversation file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent.create_history_gif">
+<span class="sig-name descname"><span class="pre">create_history_gif</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'agent_history.gif'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_goals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_logo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">56</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goal_font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">44</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_spacing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent.create_history_gif" title="Link to this definition"></a></dt>
+<dd><p>Create a GIF from the agent’s history with overlaid task and goal text.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent.get_next_action">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_next_action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a></span></span><a class="headerlink" href="#browser_use.Agent.get_next_action" title="Link to this definition"></a></dt>
+<dd><p>Get next action from LLM based on current state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent.load_and_rerun">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_and_rerun</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">history_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.Agent.load_and_rerun" title="Link to this definition"></a></dt>
+<dd><p>Load history from file and rerun it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>history_file</strong> – Path to the history file</p></li>
+<li><p><strong>**kwargs</strong> – Additional arguments passed to rerun_history</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent.rerun_history">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rerun_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">history</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList" title="browser_use.agent.views.AgentHistoryList"><span class="pre">AgentHistoryList</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_retries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_failures</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay_between_actions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.Agent.rerun_history" title="Link to this definition"></a></dt>
+<dd><p>Rerun a saved history of actions with error handling and retry logic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>history</strong> – The history to replay</p></li>
+<li><p><strong>max_retries</strong> – Maximum number of retries per action</p></li>
+<li><p><strong>skip_failures</strong> – Whether to skip failed actions or stop execution</p></li>
+<li><p><strong>delay_between_actions</strong> – Delay between actions in seconds</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of action results</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent.run">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList" title="browser_use.agent.views.AgentHistoryList"><span class="pre">AgentHistoryList</span></a></span></span><a class="headerlink" href="#browser_use.Agent.run" title="Link to this definition"></a></dt>
+<dd><p>Execute the task with maximum number of steps</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent.save_history">
+<span class="sig-name descname"><span class="pre">save_history</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent.save_history" title="Link to this definition"></a></dt>
+<dd><p>Save the history to a file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Agent.step">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">step_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo" title="browser_use.agent.views.AgentStepInfo"><span class="pre">AgentStepInfo</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.Agent.step" title="Link to this definition"></a></dt>
+<dd><p>Execute one step of the task</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">AgentHistoryList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">history</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory" title="browser_use.agent.views.AgentHistory"><span class="pre">AgentHistory</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.AgentHistoryList" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>List of agent history items</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList._abc_impl">
+<span class="sig-name descname"><span class="pre">_abc_impl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;_abc._abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#browser_use.AgentHistoryList._abc_impl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.action_names">
+<span class="sig-name descname"><span class="pre">action_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.action_names" title="Link to this definition"></a></dt>
+<dd><p>Get all action names from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.action_results">
+<span class="sig-name descname"><span class="pre">action_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.action_results" title="Link to this definition"></a></dt>
+<dd><p>Get all results from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.errors">
+<span class="sig-name descname"><span class="pre">errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.errors" title="Link to this definition"></a></dt>
+<dd><p>Get all errors from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.extracted_content">
+<span class="sig-name descname"><span class="pre">extracted_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.extracted_content" title="Link to this definition"></a></dt>
+<dd><p>Get all extracted content from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.final_result">
+<span class="sig-name descname"><span class="pre">final_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.final_result" title="Link to this definition"></a></dt>
+<dd><p>Final result from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.has_errors">
+<span class="sig-name descname"><span class="pre">has_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.has_errors" title="Link to this definition"></a></dt>
+<dd><p>Check if the agent has any errors</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.history">
+<span class="sig-name descname"><span class="pre">history</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory" title="browser_use.agent.views.AgentHistory"><span class="pre">AgentHistory</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.AgentHistoryList.history" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.is_done">
+<span class="sig-name descname"><span class="pre">is_done</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.is_done" title="Link to this definition"></a></dt>
+<dd><p>Check if the agent is done</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.last_action">
+<span class="sig-name descname"><span class="pre">last_action</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">dict</span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.last_action" title="Link to this definition"></a></dt>
+<dd><p>Last action in history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.load_from_file">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList" title="browser_use.agent.views.AgentHistoryList"><span class="pre">AgentHistoryList</span></a></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.load_from_file" title="Link to this definition"></a></dt>
+<dd><p>Load history from JSON file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.model_actions">
+<span class="sig-name descname"><span class="pre">model_actions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.model_actions" title="Link to this definition"></a></dt>
+<dd><p>Get all actions from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.model_actions_filtered">
+<span class="sig-name descname"><span class="pre">model_actions_filtered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">include</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.model_actions_filtered" title="Link to this definition"></a></dt>
+<dd><p>Get all model actions from history as JSON</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">ConfigDict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#browser_use.AgentHistoryList.model_config" title="Link to this definition"></a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.model_dump">
+<span class="sig-name descname"><span class="pre">model_dump</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.model_dump" title="Link to this definition"></a></dt>
+<dd><p>Custom serialization that properly uses AgentHistory’s model_dump</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.model_outputs">
+<span class="sig-name descname"><span class="pre">model_outputs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput" title="browser_use.agent.views.AgentOutput"><span class="pre">AgentOutput</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.model_outputs" title="Link to this definition"></a></dt>
+<dd><p>Get all model outputs from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.model_thoughts">
+<span class="sig-name descname"><span class="pre">model_thoughts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain" title="browser_use.agent.views.AgentBrain"><span class="pre">AgentBrain</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.model_thoughts" title="Link to this definition"></a></dt>
+<dd><p>Get all thoughts from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.save_to_file">
+<span class="sig-name descname"><span class="pre">save_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.save_to_file" title="Link to this definition"></a></dt>
+<dd><p>Save history to JSON file with proper serialization</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.screenshots">
+<span class="sig-name descname"><span class="pre">screenshots</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.screenshots" title="Link to this definition"></a></dt>
+<dd><p>Get all screenshots from history</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.AgentHistoryList.urls">
+<span class="sig-name descname"><span class="pre">urls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.AgentHistoryList.urls" title="Link to this definition"></a></dt>
+<dd><p>Get all unique URLs from history</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.Browser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">Browser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig" title="browser_use.browser.browser.BrowserConfig"><span class="pre">BrowserConfig</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">BrowserConfig(headless=False,</span> <span class="pre">disable_security=True,</span> <span class="pre">extra_chromium_args=[],</span> <span class="pre">chrome_instance_path=None,</span> <span class="pre">wss_url=None,</span> <span class="pre">proxy=None,</span> <span class="pre">new_context_config=BrowserContextConfig(cookies_file=None,</span> <span class="pre">minimum_wait_page_load_time=0.5,</span> <span class="pre">wait_for_network_idle_page_load_time=1,</span> <span class="pre">maximum_wait_page_load_time=5,</span> <span class="pre">wait_between_actions=1,</span> <span class="pre">disable_security=False,</span> <span class="pre">browser_window_size={'width':</span> <span class="pre">1280,</span> <span class="pre">'height':</span> <span class="pre">1100},</span> <span class="pre">no_viewport=None,</span> <span class="pre">save_recording_path=None,</span> <span class="pre">trace_path=None))</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.Browser" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Playwright browser on steroids.</p>
+<p>This is persistant browser factory that can spawn multiple browser contexts.
+It is recommended to use only one instance of Browser per your application (RAM usage will grow otherwise).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Browser._init">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.Browser._init" title="Link to this definition"></a></dt>
+<dd><p>Initialize the browser session</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Browser._setup_browser">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_setup_browser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">playwright</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Playwright</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Browser</span></span></span><a class="headerlink" href="#browser_use.Browser._setup_browser" title="Link to this definition"></a></dt>
+<dd><p>Sets up and returns a Playwright Browser instance with anti-detection measures.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Browser.close">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.Browser.close" title="Link to this definition"></a></dt>
+<dd><p>Close the browser instance</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Browser.get_playwright_browser">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_playwright_browser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Browser</span></span></span><a class="headerlink" href="#browser_use.Browser.get_playwright_browser" title="Link to this definition"></a></dt>
+<dd><p>Get a browser context</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Browser.new_context">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">new_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig" title="browser_use.browser.context.BrowserContextConfig"><span class="pre">BrowserContextConfig</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">BrowserContextConfig(cookies_file=None,</span> <span class="pre">minimum_wait_page_load_time=0.5,</span> <span class="pre">wait_for_network_idle_page_load_time=1,</span> <span class="pre">maximum_wait_page_load_time=5,</span> <span class="pre">wait_between_actions=1,</span> <span class="pre">disable_security=False,</span> <span class="pre">browser_window_size={'width':</span> <span class="pre">1280,</span> <span class="pre">'height':</span> <span class="pre">1100},</span> <span class="pre">no_viewport=None,</span> <span class="pre">save_recording_path=None,</span> <span class="pre">trace_path=None)</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext" title="browser_use.browser.context.BrowserContext"><span class="pre">BrowserContext</span></a></span></span><a class="headerlink" href="#browser_use.Browser.new_context" title="Link to this definition"></a></dt>
+<dd><p>Create a browser context</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">BrowserConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">headless:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disable_security:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_chromium_args:</span> <span class="pre">list[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chrome_instance_path:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wss_url:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proxy:</span> <span class="pre">~playwright._impl._api_structures.ProxySettings</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_context_config:</span> <span class="pre">~browser_use.browser.context.BrowserContextConfig</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.BrowserConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Configuration for the Browser.</p>
+<dl class="simple">
+<dt>Default values:</dt><dd><dl class="simple">
+<dt>headless: True</dt><dd><p>Whether to run browser in headless mode</p>
+</dd>
+<dt>disable_security: False</dt><dd><p>Disable browser security features</p>
+</dd>
+<dt>extra_chromium_args: []</dt><dd><p>Extra arguments to pass to the browser</p>
+</dd>
+<dt>wss_url: None</dt><dd><p>Connect to a browser instance via WebSocket</p>
+</dd>
+<dt>chrome_instance_path: None</dt><dd><p>Path to a Chrome instance to use to connect to your normal browser
+e.g. ‘/Applications/GoogleChrome.app/Contents/MacOS/GoogleChrome’</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig.chrome_instance_path">
+<span class="sig-name descname"><span class="pre">chrome_instance_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.BrowserConfig.chrome_instance_path" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig.disable_security">
+<span class="sig-name descname"><span class="pre">disable_security</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#browser_use.BrowserConfig.disable_security" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig.extra_chromium_args">
+<span class="sig-name descname"><span class="pre">extra_chromium_args</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#browser_use.BrowserConfig.extra_chromium_args" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig.headless">
+<span class="sig-name descname"><span class="pre">headless</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#browser_use.BrowserConfig.headless" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig.new_context_config">
+<span class="sig-name descname"><span class="pre">new_context_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig" title="browser_use.browser.context.BrowserContextConfig"><span class="pre">BrowserContextConfig</span></a></em><a class="headerlink" href="#browser_use.BrowserConfig.new_context_config" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig.proxy">
+<span class="sig-name descname"><span class="pre">proxy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ProxySettings</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.BrowserConfig.proxy" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="browser_use.BrowserConfig.wss_url">
+<span class="sig-name descname"><span class="pre">wss_url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#browser_use.BrowserConfig.wss_url" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.Controller">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">Controller</span></span><a class="headerlink" href="#browser_use.Controller" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Controller._register_default_actions">
+<span class="sig-name descname"><span class="pre">_register_default_actions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.Controller._register_default_actions" title="Link to this definition"></a></dt>
+<dd><p>Register all default browser actions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Controller.act">
+<span class="sig-name descname"><span class="pre">act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">browser_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext" title="browser_use.browser.context.BrowserContext"><span class="pre">BrowserContext</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a></span></span><a class="headerlink" href="#browser_use.Controller.act" title="Link to this definition"></a></dt>
+<dd><p>Execute an action</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Controller.action">
+<span class="sig-name descname"><span class="pre">action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.Controller.action" title="Link to this definition"></a></dt>
+<dd><p>Decorator for registering custom actions</p>
+<p>&#64;param description: Describe the LLM what the function does (better description == better function calling)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.Controller.multi_act">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">multi_act</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#browser_use.ActionModel" title="browser_use.controller.registry.views.ActionModel"><span class="pre">ActionModel</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">browser_context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext" title="browser_use.browser.context.BrowserContext"><span class="pre">BrowserContext</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult" title="browser_use.agent.views.ActionResult"><span class="pre">ActionResult</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.Controller.multi_act" title="Link to this definition"></a></dt>
+<dd><p>Execute multiple actions</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.DomService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">DomService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Page</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.DomService" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.DomService._build_dom_tree">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_build_dom_tree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">highlight_elements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></span><a class="headerlink" href="#browser_use.DomService._build_dom_tree" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.DomService._create_selector_map">
+<span class="sig-name descname"><span class="pre">_create_selector_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element_tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#browser_use.DomService._create_selector_map" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.DomService._parse_node">
+<span class="sig-name descname"><span class="pre">_parse_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode" title="browser_use.dom.views.DOMElementNode"><span class="pre">DOMElementNode</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMBaseNode" title="browser_use.dom.views.DOMBaseNode"><span class="pre">DOMBaseNode</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#browser_use.DomService._parse_node" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.DomService.get_clickable_elements">
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_clickable_elements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">highlight_elements</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMState" title="browser_use.dom.views.DOMState"><span class="pre">DOMState</span></a></span></span><a class="headerlink" href="#browser_use.DomService.get_clickable_elements" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="browser_use.SystemPrompt">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">browser_use.</span></span><span class="sig-name descname"><span class="pre">SystemPrompt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action_description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_actions_per_step</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#browser_use.SystemPrompt" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.SystemPrompt.get_system_message">
+<span class="sig-name descname"><span class="pre">get_system_message</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SystemMessage</span></span></span><a class="headerlink" href="#browser_use.SystemPrompt.get_system_message" title="Link to this definition"></a></dt>
+<dd><p>Get the system prompt for the agent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Formatted system prompt</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.SystemPrompt.important_rules">
+<span class="sig-name descname"><span class="pre">important_rules</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.SystemPrompt.important_rules" title="Link to this definition"></a></dt>
+<dd><p>Returns the important rules for the agent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="browser_use.SystemPrompt.input_format">
+<span class="sig-name descname"><span class="pre">input_format</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#browser_use.SystemPrompt.input_format" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 <section id="subpackages">
 <h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="browser_use.agent.html">browser_use.agent package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.agent.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.prompts.html">browser_use.agent.prompts module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.service.html">browser_use.agent.service module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html">browser_use.agent.tests module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html">browser_use.agent.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.prompts.html"><code class="docutils literal notranslate"><span class="pre">AgentMessagePrompt</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.AgentMessagePrompt.get_user_message"><code class="docutils literal notranslate"><span class="pre">AgentMessagePrompt.get_user_message()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.html#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt.get_system_message"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.get_system_message()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt.important_rules"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.important_rules()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt.input_format"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.input_format()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.service.html"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._add_overlay_to_image"><code class="docutils literal notranslate"><span class="pre">Agent._add_overlay_to_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._create_task_frame"><code class="docutils literal notranslate"><span class="pre">Agent._create_task_frame()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._execute_history_step"><code class="docutils literal notranslate"><span class="pre">Agent._execute_history_step()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._handle_step_error"><code class="docutils literal notranslate"><span class="pre">Agent._handle_step_error()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._log_response"><code class="docutils literal notranslate"><span class="pre">Agent._log_response()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._make_history_item"><code class="docutils literal notranslate"><span class="pre">Agent._make_history_item()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._save_conversation"><code class="docutils literal notranslate"><span class="pre">Agent._save_conversation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._setup_action_models"><code class="docutils literal notranslate"><span class="pre">Agent._setup_action_models()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._too_many_failures"><code class="docutils literal notranslate"><span class="pre">Agent._too_many_failures()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._update_action_indices"><code class="docutils literal notranslate"><span class="pre">Agent._update_action_indices()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._validate_output"><code class="docutils literal notranslate"><span class="pre">Agent._validate_output()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._wrap_text"><code class="docutils literal notranslate"><span class="pre">Agent._wrap_text()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._write_messages_to_file"><code class="docutils literal notranslate"><span class="pre">Agent._write_messages_to_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._write_response_to_file"><code class="docutils literal notranslate"><span class="pre">Agent._write_response_to_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.create_history_gif"><code class="docutils literal notranslate"><span class="pre">Agent.create_history_gif()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.get_next_action"><code class="docutils literal notranslate"><span class="pre">Agent.get_next_action()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.load_and_rerun"><code class="docutils literal notranslate"><span class="pre">Agent.load_and_rerun()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.rerun_history"><code class="docutils literal notranslate"><span class="pre">Agent.rerun_history()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.run"><code class="docutils literal notranslate"><span class="pre">Agent.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.save_history"><code class="docutils literal notranslate"><span class="pre">Agent.save_history()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.step"><code class="docutils literal notranslate"><span class="pre">Agent.step()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html"><code class="docutils literal notranslate"><span class="pre">action_registry()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.sample_browser_state"><code class="docutils literal notranslate"><span class="pre">sample_browser_state()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.sample_history"><code class="docutils literal notranslate"><span class="pre">sample_history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_action_creation"><code class="docutils literal notranslate"><span class="pre">test_action_creation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_all_model_outputs"><code class="docutils literal notranslate"><span class="pre">test_all_model_outputs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_all_model_outputs_filtered"><code class="docutils literal notranslate"><span class="pre">test_all_model_outputs_filtered()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_all_screenshots"><code class="docutils literal notranslate"><span class="pre">test_all_screenshots()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_empty_history"><code class="docutils literal notranslate"><span class="pre">test_empty_history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_final_result"><code class="docutils literal notranslate"><span class="pre">test_final_result()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_get_errors"><code class="docutils literal notranslate"><span class="pre">test_get_errors()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_is_done"><code class="docutils literal notranslate"><span class="pre">test_is_done()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_last_model_output"><code class="docutils literal notranslate"><span class="pre">test_last_model_output()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_urls"><code class="docutils literal notranslate"><span class="pre">test_urls()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult._abc_impl"><code class="docutils literal notranslate"><span class="pre">ActionResult._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.error"><code class="docutils literal notranslate"><span class="pre">ActionResult.error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.extracted_content"><code class="docutils literal notranslate"><span class="pre">ActionResult.extracted_content</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.include_in_memory"><code class="docutils literal notranslate"><span class="pre">ActionResult.include_in_memory</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.is_done"><code class="docutils literal notranslate"><span class="pre">ActionResult.is_done</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.model_config"><code class="docutils literal notranslate"><span class="pre">ActionResult.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain"><code class="docutils literal notranslate"><span class="pre">AgentBrain</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentBrain._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.evaluation_previous_goal"><code class="docutils literal notranslate"><span class="pre">AgentBrain.evaluation_previous_goal</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.memory"><code class="docutils literal notranslate"><span class="pre">AgentBrain.memory</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.model_config"><code class="docutils literal notranslate"><span class="pre">AgentBrain.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.next_goal"><code class="docutils literal notranslate"><span class="pre">AgentBrain.next_goal</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError"><code class="docutils literal notranslate"><span class="pre">AgentError</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.NO_VALID_ACTION"><code class="docutils literal notranslate"><span class="pre">AgentError.NO_VALID_ACTION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.RATE_LIMIT_ERROR"><code class="docutils literal notranslate"><span class="pre">AgentError.RATE_LIMIT_ERROR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.VALIDATION_ERROR"><code class="docutils literal notranslate"><span class="pre">AgentError.VALIDATION_ERROR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.format_error"><code class="docutils literal notranslate"><span class="pre">AgentError.format_error()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory"><code class="docutils literal notranslate"><span class="pre">AgentHistory</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentHistory._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.get_interacted_element"><code class="docutils literal notranslate"><span class="pre">AgentHistory.get_interacted_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.model_config"><code class="docutils literal notranslate"><span class="pre">AgentHistory.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.model_dump"><code class="docutils literal notranslate"><span class="pre">AgentHistory.model_dump()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.model_output"><code class="docutils literal notranslate"><span class="pre">AgentHistory.model_output</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.result"><code class="docutils literal notranslate"><span class="pre">AgentHistory.result</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.state"><code class="docutils literal notranslate"><span class="pre">AgentHistory.state</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.action_names"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.action_names()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.action_results"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.action_results()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.errors"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.errors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.extracted_content"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.extracted_content()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.final_result"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.final_result()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.has_errors"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.has_errors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.history"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.history</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.is_done"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.is_done()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.last_action"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.last_action()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.load_from_file"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.load_from_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_actions"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_actions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_actions_filtered"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_actions_filtered()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_config"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_dump"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_dump()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_outputs"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_outputs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_thoughts"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_thoughts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.save_to_file"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.save_to_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.screenshots"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.screenshots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.urls"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.urls()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput"><code class="docutils literal notranslate"><span class="pre">AgentOutput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentOutput._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.action"><code class="docutils literal notranslate"><span class="pre">AgentOutput.action</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.current_state"><code class="docutils literal notranslate"><span class="pre">AgentOutput.current_state</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.model_config"><code class="docutils literal notranslate"><span class="pre">AgentOutput.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.type_with_custom_actions"><code class="docutils literal notranslate"><span class="pre">AgentOutput.type_with_custom_actions()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo"><code class="docutils literal notranslate"><span class="pre">AgentStepInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo.max_steps"><code class="docutils literal notranslate"><span class="pre">AgentStepInfo.max_steps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo.step_number"><code class="docutils literal notranslate"><span class="pre">AgentStepInfo.step_number</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.browser.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.browser.html">browser_use.browser.browser module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.context.html">browser_use.browser.context module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.views.html">browser_use.browser.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.browser.html"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.Browser._init"><code class="docutils literal notranslate"><span class="pre">Browser._init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.Browser._setup_browser"><code class="docutils literal notranslate"><span class="pre">Browser._setup_browser()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.Browser.close"><code class="docutils literal notranslate"><span class="pre">Browser.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.Browser.get_playwright_browser"><code class="docutils literal notranslate"><span class="pre">Browser.get_playwright_browser()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.Browser.new_context"><code class="docutils literal notranslate"><span class="pre">Browser.new_context()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.browser.html#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig.chrome_instance_path"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.chrome_instance_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig.disable_security"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.disable_security</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig.extra_chromium_args"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.extra_chromium_args</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig.headless"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.headless</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig.new_context_config"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.new_context_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig.proxy"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.proxy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.browser.html#browser_use.browser.browser.BrowserConfig.wss_url"><code class="docutils literal notranslate"><span class="pre">BrowserConfig.wss_url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.context.html"><code class="docutils literal notranslate"><span class="pre">BrowserContext</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._add_new_page_listener"><code class="docutils literal notranslate"><span class="pre">BrowserContext._add_new_page_listener()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._click_element_node"><code class="docutils literal notranslate"><span class="pre">BrowserContext._click_element_node()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._convert_simple_xpath_to_css_selector"><code class="docutils literal notranslate"><span class="pre">BrowserContext._convert_simple_xpath_to_css_selector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._create_context"><code class="docutils literal notranslate"><span class="pre">BrowserContext._create_context()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._enhanced_css_selector_for_element"><code class="docutils literal notranslate"><span class="pre">BrowserContext._enhanced_css_selector_for_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._initialize_session"><code class="docutils literal notranslate"><span class="pre">BrowserContext._initialize_session()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._input_text_element_node"><code class="docutils literal notranslate"><span class="pre">BrowserContext._input_text_element_node()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._update_state"><code class="docutils literal notranslate"><span class="pre">BrowserContext._update_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._wait_for_page_and_frames_load"><code class="docutils literal notranslate"><span class="pre">BrowserContext._wait_for_page_and_frames_load()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext._wait_for_stable_network"><code class="docutils literal notranslate"><span class="pre">BrowserContext._wait_for_stable_network()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.close"><code class="docutils literal notranslate"><span class="pre">BrowserContext.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.close_current_tab"><code class="docutils literal notranslate"><span class="pre">BrowserContext.close_current_tab()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.create_new_tab"><code class="docutils literal notranslate"><span class="pre">BrowserContext.create_new_tab()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.execute_javascript"><code class="docutils literal notranslate"><span class="pre">BrowserContext.execute_javascript()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_current_page"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_current_page()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_dom_element_by_index"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_dom_element_by_index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_element_by_index"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_element_by_index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_locate_element"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_locate_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_page_html"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_page_html()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_selector_map"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_selector_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_session"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_session()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_state"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_state()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.get_tabs_info"><code class="docutils literal notranslate"><span class="pre">BrowserContext.get_tabs_info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.go_back"><code class="docutils literal notranslate"><span class="pre">BrowserContext.go_back()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.go_forward"><code class="docutils literal notranslate"><span class="pre">BrowserContext.go_forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.is_file_uploader"><code class="docutils literal notranslate"><span class="pre">BrowserContext.is_file_uploader()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.navigate_to"><code class="docutils literal notranslate"><span class="pre">BrowserContext.navigate_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.refresh_page"><code class="docutils literal notranslate"><span class="pre">BrowserContext.refresh_page()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.remove_highlights"><code class="docutils literal notranslate"><span class="pre">BrowserContext.remove_highlights()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.save_cookies"><code class="docutils literal notranslate"><span class="pre">BrowserContext.save_cookies()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.switch_to_tab"><code class="docutils literal notranslate"><span class="pre">BrowserContext.switch_to_tab()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContext.take_screenshot"><code class="docutils literal notranslate"><span class="pre">BrowserContext.take_screenshot()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.browser_window_size"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.browser_window_size</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.cookies_file"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.cookies_file</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.disable_security"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.disable_security</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.maximum_wait_page_load_time"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.maximum_wait_page_load_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.minimum_wait_page_load_time"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.minimum_wait_page_load_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.no_viewport"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.no_viewport</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.save_recording_path"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.save_recording_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.trace_path"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.trace_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.wait_between_actions"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.wait_between_actions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextConfig.wait_for_network_idle_page_load_time"><code class="docutils literal notranslate"><span class="pre">BrowserContextConfig.wait_for_network_idle_page_load_time</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextWindowSize"><code class="docutils literal notranslate"><span class="pre">BrowserContextWindowSize</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextWindowSize.height"><code class="docutils literal notranslate"><span class="pre">BrowserContextWindowSize.height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserContextWindowSize.width"><code class="docutils literal notranslate"><span class="pre">BrowserContextWindowSize.width</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserSession"><code class="docutils literal notranslate"><span class="pre">BrowserSession</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserSession.cached_state"><code class="docutils literal notranslate"><span class="pre">BrowserSession.cached_state</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserSession.context"><code class="docutils literal notranslate"><span class="pre">BrowserSession.context</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.context.html#browser_use.browser.context.BrowserSession.current_page"><code class="docutils literal notranslate"><span class="pre">BrowserSession.current_page</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.views.html"><code class="docutils literal notranslate"><span class="pre">BrowserError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState"><code class="docutils literal notranslate"><span class="pre">BrowserState</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState.screenshot"><code class="docutils literal notranslate"><span class="pre">BrowserState.screenshot</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState.tabs"><code class="docutils literal notranslate"><span class="pre">BrowserState.tabs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState.title"><code class="docutils literal notranslate"><span class="pre">BrowserState.title</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserState.url"><code class="docutils literal notranslate"><span class="pre">BrowserState.url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory"><code class="docutils literal notranslate"><span class="pre">BrowserStateHistory</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory.interacted_element"><code class="docutils literal notranslate"><span class="pre">BrowserStateHistory.interacted_element</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory.screenshot"><code class="docutils literal notranslate"><span class="pre">BrowserStateHistory.screenshot</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory.tabs"><code class="docutils literal notranslate"><span class="pre">BrowserStateHistory.tabs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory.title"><code class="docutils literal notranslate"><span class="pre">BrowserStateHistory.title</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory.to_dict"><code class="docutils literal notranslate"><span class="pre">BrowserStateHistory.to_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.BrowserStateHistory.url"><code class="docutils literal notranslate"><span class="pre">BrowserStateHistory.url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.TabInfo"><code class="docutils literal notranslate"><span class="pre">TabInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.TabInfo._abc_impl"><code class="docutils literal notranslate"><span class="pre">TabInfo._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.TabInfo.model_config"><code class="docutils literal notranslate"><span class="pre">TabInfo.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.TabInfo.page_id"><code class="docutils literal notranslate"><span class="pre">TabInfo.page_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.TabInfo.title"><code class="docutils literal notranslate"><span class="pre">TabInfo.title</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.browser.views.html#browser_use.browser.views.TabInfo.url"><code class="docutils literal notranslate"><span class="pre">TabInfo.url</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="browser_use.controller.html">browser_use.controller package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.controller.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.service.html">browser_use.controller.service module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html">browser_use.controller.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.service.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.service.html#browser_use.controller.service.Controller._register_default_actions"><code class="docutils literal notranslate"><span class="pre">Controller._register_default_actions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.service.html#browser_use.controller.service.Controller.act"><code class="docutils literal notranslate"><span class="pre">Controller.act()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.service.html#browser_use.controller.service.Controller.action"><code class="docutils literal notranslate"><span class="pre">Controller.action()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.service.html#browser_use.controller.service.Controller.multi_act"><code class="docutils literal notranslate"><span class="pre">Controller.multi_act()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.controller.html#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html"><code class="docutils literal notranslate"><span class="pre">ClickElementAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ClickElementAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">ClickElementAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ClickElementAction.index"><code class="docutils literal notranslate"><span class="pre">ClickElementAction.index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ClickElementAction.model_config"><code class="docutils literal notranslate"><span class="pre">ClickElementAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ClickElementAction.xpath"><code class="docutils literal notranslate"><span class="pre">ClickElementAction.xpath</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.DoneAction"><code class="docutils literal notranslate"><span class="pre">DoneAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.DoneAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">DoneAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.DoneAction.model_config"><code class="docutils literal notranslate"><span class="pre">DoneAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.DoneAction.text"><code class="docutils literal notranslate"><span class="pre">DoneAction.text</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ExtractPageContentAction"><code class="docutils literal notranslate"><span class="pre">ExtractPageContentAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ExtractPageContentAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">ExtractPageContentAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ExtractPageContentAction.model_config"><code class="docutils literal notranslate"><span class="pre">ExtractPageContentAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ExtractPageContentAction.value"><code class="docutils literal notranslate"><span class="pre">ExtractPageContentAction.value</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.GoToUrlAction"><code class="docutils literal notranslate"><span class="pre">GoToUrlAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.GoToUrlAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">GoToUrlAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.GoToUrlAction.model_config"><code class="docutils literal notranslate"><span class="pre">GoToUrlAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.GoToUrlAction.url"><code class="docutils literal notranslate"><span class="pre">GoToUrlAction.url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.InputTextAction"><code class="docutils literal notranslate"><span class="pre">InputTextAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.InputTextAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">InputTextAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.InputTextAction.index"><code class="docutils literal notranslate"><span class="pre">InputTextAction.index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.InputTextAction.model_config"><code class="docutils literal notranslate"><span class="pre">InputTextAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.InputTextAction.text"><code class="docutils literal notranslate"><span class="pre">InputTextAction.text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.InputTextAction.xpath"><code class="docutils literal notranslate"><span class="pre">InputTextAction.xpath</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.OpenTabAction"><code class="docutils literal notranslate"><span class="pre">OpenTabAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.OpenTabAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">OpenTabAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.OpenTabAction.model_config"><code class="docutils literal notranslate"><span class="pre">OpenTabAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.OpenTabAction.url"><code class="docutils literal notranslate"><span class="pre">OpenTabAction.url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ScrollAction"><code class="docutils literal notranslate"><span class="pre">ScrollAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ScrollAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">ScrollAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ScrollAction.amount"><code class="docutils literal notranslate"><span class="pre">ScrollAction.amount</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.ScrollAction.model_config"><code class="docutils literal notranslate"><span class="pre">ScrollAction.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SearchGoogleAction"><code class="docutils literal notranslate"><span class="pre">SearchGoogleAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SearchGoogleAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">SearchGoogleAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SearchGoogleAction.model_config"><code class="docutils literal notranslate"><span class="pre">SearchGoogleAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SearchGoogleAction.query"><code class="docutils literal notranslate"><span class="pre">SearchGoogleAction.query</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SendKeysAction"><code class="docutils literal notranslate"><span class="pre">SendKeysAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SendKeysAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">SendKeysAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SendKeysAction.keys"><code class="docutils literal notranslate"><span class="pre">SendKeysAction.keys</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SendKeysAction.model_config"><code class="docutils literal notranslate"><span class="pre">SendKeysAction.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SwitchTabAction"><code class="docutils literal notranslate"><span class="pre">SwitchTabAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SwitchTabAction._abc_impl"><code class="docutils literal notranslate"><span class="pre">SwitchTabAction._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SwitchTabAction.model_config"><code class="docutils literal notranslate"><span class="pre">SwitchTabAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.controller.views.html#browser_use.controller.views.SwitchTabAction.page_id"><code class="docutils literal notranslate"><span class="pre">SwitchTabAction.page_id</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="browser_use.dom.html">browser_use.dom package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.dom.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.service.html">browser_use.dom.service module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.views.html">browser_use.dom.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.service.html"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService._build_dom_tree"><code class="docutils literal notranslate"><span class="pre">DomService._build_dom_tree()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService._create_selector_map"><code class="docutils literal notranslate"><span class="pre">DomService._create_selector_map()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService._parse_node"><code class="docutils literal notranslate"><span class="pre">DomService._parse_node()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.service.html#browser_use.dom.service.DomService.get_clickable_elements"><code class="docutils literal notranslate"><span class="pre">DomService.get_clickable_elements()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.dom.html#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.views.html"><code class="docutils literal notranslate"><span class="pre">DOMBaseNode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMBaseNode.is_visible"><code class="docutils literal notranslate"><span class="pre">DOMBaseNode.is_visible</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMBaseNode.parent"><code class="docutils literal notranslate"><span class="pre">DOMBaseNode.parent</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode"><code class="docutils literal notranslate"><span class="pre">DOMElementNode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.attributes"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.attributes</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.children"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.children</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.clickable_elements_to_string"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.clickable_elements_to_string()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.get_all_text_till_next_clickable_element"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.get_all_text_till_next_clickable_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.get_file_upload_element"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.get_file_upload_element()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.hash"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.hash</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.highlight_index"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.highlight_index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.is_interactive"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.is_interactive</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.is_top_element"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.is_top_element</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.shadow_root"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.shadow_root</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.tag_name"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.tag_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMElementNode.xpath"><code class="docutils literal notranslate"><span class="pre">DOMElementNode.xpath</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMState"><code class="docutils literal notranslate"><span class="pre">DOMState</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMState.element_tree"><code class="docutils literal notranslate"><span class="pre">DOMState.element_tree</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMState.selector_map"><code class="docutils literal notranslate"><span class="pre">DOMState.selector_map</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode"><code class="docutils literal notranslate"><span class="pre">DOMTextNode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode.has_parent_with_highlight_index"><code class="docutils literal notranslate"><span class="pre">DOMTextNode.has_parent_with_highlight_index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode.text"><code class="docutils literal notranslate"><span class="pre">DOMTextNode.text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.DOMTextNode.type"><code class="docutils literal notranslate"><span class="pre">DOMTextNode.type</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.ElementTreeSerializer"><code class="docutils literal notranslate"><span class="pre">ElementTreeSerializer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.ElementTreeSerializer.dom_element_node_to_json"><code class="docutils literal notranslate"><span class="pre">ElementTreeSerializer.dom_element_node_to_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.dom.views.html#browser_use.dom.views.ElementTreeSerializer.serialize_clickable_elements"><code class="docutils literal notranslate"><span class="pre">ElementTreeSerializer.serialize_clickable_elements()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="browser_use.telemetry.html">browser_use.telemetry package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.telemetry.html#submodules">Submodules</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.service.html">browser_use.telemetry.service module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.views.html">browser_use.telemetry.views module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.views.html"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentEndTelemetryEvent._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentEndTelemetryEvent.agent_id"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent.agent_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentEndTelemetryEvent.error"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent.error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentEndTelemetryEvent.name"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentEndTelemetryEvent.steps"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent.steps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentEndTelemetryEvent.success"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent.success</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentEndTelemetryEvent.task"><code class="docutils literal notranslate"><span class="pre">AgentEndTelemetryEvent.task</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.telemetry.html#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentRunTelemetryEvent"><code class="docutils literal notranslate"><span class="pre">AgentRunTelemetryEvent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentRunTelemetryEvent._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentRunTelemetryEvent._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentRunTelemetryEvent.agent_id"><code class="docutils literal notranslate"><span class="pre">AgentRunTelemetryEvent.agent_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentRunTelemetryEvent.name"><code class="docutils literal notranslate"><span class="pre">AgentRunTelemetryEvent.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentRunTelemetryEvent.task"><code class="docutils literal notranslate"><span class="pre">AgentRunTelemetryEvent.task</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentStepErrorTelemetryEvent"><code class="docutils literal notranslate"><span class="pre">AgentStepErrorTelemetryEvent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentStepErrorTelemetryEvent._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentStepErrorTelemetryEvent._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentStepErrorTelemetryEvent.agent_id"><code class="docutils literal notranslate"><span class="pre">AgentStepErrorTelemetryEvent.agent_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentStepErrorTelemetryEvent.error"><code class="docutils literal notranslate"><span class="pre">AgentStepErrorTelemetryEvent.error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.AgentStepErrorTelemetryEvent.name"><code class="docutils literal notranslate"><span class="pre">AgentStepErrorTelemetryEvent.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.BaseTelemetryEvent"><code class="docutils literal notranslate"><span class="pre">BaseTelemetryEvent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.BaseTelemetryEvent._abc_impl"><code class="docutils literal notranslate"><span class="pre">BaseTelemetryEvent._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.BaseTelemetryEvent.name"><code class="docutils literal notranslate"><span class="pre">BaseTelemetryEvent.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.BaseTelemetryEvent.properties"><code class="docutils literal notranslate"><span class="pre">BaseTelemetryEvent.properties</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent"><code class="docutils literal notranslate"><span class="pre">ControllerRegisteredFunctionsTelemetryEvent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent._abc_impl"><code class="docutils literal notranslate"><span class="pre">ControllerRegisteredFunctionsTelemetryEvent._abc_impl</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent.name"><code class="docutils literal notranslate"><span class="pre">ControllerRegisteredFunctionsTelemetryEvent.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.ControllerRegisteredFunctionsTelemetryEvent.registered_functions"><code class="docutils literal notranslate"><span class="pre">ControllerRegisteredFunctionsTelemetryEvent.registered_functions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.RegisteredFunction"><code class="docutils literal notranslate"><span class="pre">RegisteredFunction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.RegisteredFunction.name"><code class="docutils literal notranslate"><span class="pre">RegisteredFunction.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="browser_use.telemetry.views.html#browser_use.telemetry.views.RegisteredFunction.params"><code class="docutils literal notranslate"><span class="pre">RegisteredFunction.params</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -148,13 +1150,13 @@
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.logging_config.html">browser_use.logging_config module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.utils.html">browser_use.utils module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.logging_config.html"><code class="docutils literal notranslate"><span class="pre">addLoggingLevel()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.logging_config.html#browser_use.logging_config.setup_logging"><code class="docutils literal notranslate"><span class="pre">setup_logging()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.utils.html"><code class="docutils literal notranslate"><span class="pre">singleton()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.utils.html#browser_use.utils.time_execution_async"><code class="docutils literal notranslate"><span class="pre">time_execution_async()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.utils.html#browser_use.utils.time_execution_sync"><code class="docutils literal notranslate"><span class="pre">time_execution_sync()</span></code></a></li>
 </ul>
 </div>
-</section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
 </section>
 </section>
 

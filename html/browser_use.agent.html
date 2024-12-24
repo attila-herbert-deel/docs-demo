@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="browser_use.agent.prompts module" href="browser_use.agent.prompts.html" />
+    <link rel="next" title="&lt;no title&gt;" href="browser_use.agent.prompts.html" />
     <link rel="prev" title="browser_use package" href="browser_use.html" /> 
 </head>
 
@@ -45,10 +45,18 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="browser_use.html">browser_use package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionModel"><code class="docutils literal notranslate"><span class="pre">ActionModel</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.ActionResult"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Browser"><code class="docutils literal notranslate"><span class="pre">Browser</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.BrowserConfig"><code class="docutils literal notranslate"><span class="pre">BrowserConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.DomService"><code class="docutils literal notranslate"><span class="pre">DomService</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.html#browser_use.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="browser_use.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">browser_use.agent package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-contents">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="browser_use.browser.html">browser_use.browser package</a></li>
@@ -58,7 +66,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="browser_use.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser_use.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -88,21 +95,131 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="browser-use-agent-package">
-<h1>browser_use.agent package<a class="headerlink" href="#browser-use-agent-package" title="Link to this heading"></a></h1>
+  <section id="module-browser_use.agent">
+<span id="browser-use-agent-package"></span><h1>browser_use.agent package<a class="headerlink" href="#module-browser_use.agent" title="Link to this heading"></a></h1>
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.prompts.html">browser_use.agent.prompts module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.service.html">browser_use.agent.service module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html">browser_use.agent.tests module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html">browser_use.agent.views module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.prompts.html"><code class="docutils literal notranslate"><span class="pre">AgentMessagePrompt</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.AgentMessagePrompt.get_user_message"><code class="docutils literal notranslate"><span class="pre">AgentMessagePrompt.get_user_message()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt"><code class="docutils literal notranslate"><span class="pre">SystemPrompt</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt.get_system_message"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.get_system_message()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt.important_rules"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.important_rules()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.prompts.html#browser_use.agent.prompts.SystemPrompt.input_format"><code class="docutils literal notranslate"><span class="pre">SystemPrompt.input_format()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.service.html"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._add_overlay_to_image"><code class="docutils literal notranslate"><span class="pre">Agent._add_overlay_to_image()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._create_task_frame"><code class="docutils literal notranslate"><span class="pre">Agent._create_task_frame()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._execute_history_step"><code class="docutils literal notranslate"><span class="pre">Agent._execute_history_step()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._handle_step_error"><code class="docutils literal notranslate"><span class="pre">Agent._handle_step_error()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._log_response"><code class="docutils literal notranslate"><span class="pre">Agent._log_response()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._make_history_item"><code class="docutils literal notranslate"><span class="pre">Agent._make_history_item()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._save_conversation"><code class="docutils literal notranslate"><span class="pre">Agent._save_conversation()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._setup_action_models"><code class="docutils literal notranslate"><span class="pre">Agent._setup_action_models()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._too_many_failures"><code class="docutils literal notranslate"><span class="pre">Agent._too_many_failures()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._update_action_indices"><code class="docutils literal notranslate"><span class="pre">Agent._update_action_indices()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._validate_output"><code class="docutils literal notranslate"><span class="pre">Agent._validate_output()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._wrap_text"><code class="docutils literal notranslate"><span class="pre">Agent._wrap_text()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._write_messages_to_file"><code class="docutils literal notranslate"><span class="pre">Agent._write_messages_to_file()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent._write_response_to_file"><code class="docutils literal notranslate"><span class="pre">Agent._write_response_to_file()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.create_history_gif"><code class="docutils literal notranslate"><span class="pre">Agent.create_history_gif()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.get_next_action"><code class="docutils literal notranslate"><span class="pre">Agent.get_next_action()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.load_and_rerun"><code class="docutils literal notranslate"><span class="pre">Agent.load_and_rerun()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.rerun_history"><code class="docutils literal notranslate"><span class="pre">Agent.rerun_history()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.run"><code class="docutils literal notranslate"><span class="pre">Agent.run()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.save_history"><code class="docutils literal notranslate"><span class="pre">Agent.save_history()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.service.html#browser_use.agent.service.Agent.step"><code class="docutils literal notranslate"><span class="pre">Agent.step()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html"><code class="docutils literal notranslate"><span class="pre">action_registry()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.sample_browser_state"><code class="docutils literal notranslate"><span class="pre">sample_browser_state()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.sample_history"><code class="docutils literal notranslate"><span class="pre">sample_history()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_action_creation"><code class="docutils literal notranslate"><span class="pre">test_action_creation()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_all_model_outputs"><code class="docutils literal notranslate"><span class="pre">test_all_model_outputs()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_all_model_outputs_filtered"><code class="docutils literal notranslate"><span class="pre">test_all_model_outputs_filtered()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_all_screenshots"><code class="docutils literal notranslate"><span class="pre">test_all_screenshots()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_empty_history"><code class="docutils literal notranslate"><span class="pre">test_empty_history()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_final_result"><code class="docutils literal notranslate"><span class="pre">test_final_result()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_get_errors"><code class="docutils literal notranslate"><span class="pre">test_get_errors()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_is_done"><code class="docutils literal notranslate"><span class="pre">test_is_done()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_last_model_output"><code class="docutils literal notranslate"><span class="pre">test_last_model_output()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.tests.html#browser_use.agent.tests.test_urls"><code class="docutils literal notranslate"><span class="pre">test_urls()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html"><code class="docutils literal notranslate"><span class="pre">ActionResult</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult._abc_impl"><code class="docutils literal notranslate"><span class="pre">ActionResult._abc_impl</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.error"><code class="docutils literal notranslate"><span class="pre">ActionResult.error</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.extracted_content"><code class="docutils literal notranslate"><span class="pre">ActionResult.extracted_content</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.include_in_memory"><code class="docutils literal notranslate"><span class="pre">ActionResult.include_in_memory</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.is_done"><code class="docutils literal notranslate"><span class="pre">ActionResult.is_done</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.ActionResult.model_config"><code class="docutils literal notranslate"><span class="pre">ActionResult.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain"><code class="docutils literal notranslate"><span class="pre">AgentBrain</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentBrain._abc_impl</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.evaluation_previous_goal"><code class="docutils literal notranslate"><span class="pre">AgentBrain.evaluation_previous_goal</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.memory"><code class="docutils literal notranslate"><span class="pre">AgentBrain.memory</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.model_config"><code class="docutils literal notranslate"><span class="pre">AgentBrain.model_config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentBrain.next_goal"><code class="docutils literal notranslate"><span class="pre">AgentBrain.next_goal</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError"><code class="docutils literal notranslate"><span class="pre">AgentError</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.NO_VALID_ACTION"><code class="docutils literal notranslate"><span class="pre">AgentError.NO_VALID_ACTION</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.RATE_LIMIT_ERROR"><code class="docutils literal notranslate"><span class="pre">AgentError.RATE_LIMIT_ERROR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.VALIDATION_ERROR"><code class="docutils literal notranslate"><span class="pre">AgentError.VALIDATION_ERROR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentError.format_error"><code class="docutils literal notranslate"><span class="pre">AgentError.format_error()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory"><code class="docutils literal notranslate"><span class="pre">AgentHistory</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentHistory._abc_impl</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.get_interacted_element"><code class="docutils literal notranslate"><span class="pre">AgentHistory.get_interacted_element()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.model_config"><code class="docutils literal notranslate"><span class="pre">AgentHistory.model_config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.model_dump"><code class="docutils literal notranslate"><span class="pre">AgentHistory.model_dump()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.model_output"><code class="docutils literal notranslate"><span class="pre">AgentHistory.model_output</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.result"><code class="docutils literal notranslate"><span class="pre">AgentHistory.result</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistory.state"><code class="docutils literal notranslate"><span class="pre">AgentHistory.state</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList._abc_impl</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.action_names"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.action_names()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.action_results"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.action_results()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.errors"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.errors()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.extracted_content"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.extracted_content()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.final_result"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.final_result()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.has_errors"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.has_errors()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.history"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.history</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.is_done"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.is_done()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.last_action"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.last_action()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.load_from_file"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.load_from_file()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_actions"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_actions()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_actions_filtered"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_actions_filtered()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_config"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_dump"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_dump()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_outputs"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_outputs()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.model_thoughts"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.model_thoughts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.save_to_file"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.save_to_file()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.screenshots"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.screenshots()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentHistoryList.urls"><code class="docutils literal notranslate"><span class="pre">AgentHistoryList.urls()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput"><code class="docutils literal notranslate"><span class="pre">AgentOutput</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput._abc_impl"><code class="docutils literal notranslate"><span class="pre">AgentOutput._abc_impl</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.action"><code class="docutils literal notranslate"><span class="pre">AgentOutput.action</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.current_state"><code class="docutils literal notranslate"><span class="pre">AgentOutput.current_state</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.model_config"><code class="docutils literal notranslate"><span class="pre">AgentOutput.model_config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentOutput.type_with_custom_actions"><code class="docutils literal notranslate"><span class="pre">AgentOutput.type_with_custom_actions()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo"><code class="docutils literal notranslate"><span class="pre">AgentStepInfo</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo.max_steps"><code class="docutils literal notranslate"><span class="pre">AgentStepInfo.max_steps</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser_use.agent.views.html#browser_use.agent.views.AgentStepInfo.step_number"><code class="docutils literal notranslate"><span class="pre">AgentStepInfo.step_number</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
-</section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
 </section>
 </section>
 
@@ -111,7 +228,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="browser_use.html" class="btn btn-neutral float-left" title="browser_use package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="browser_use.agent.prompts.html" class="btn btn-neutral float-right" title="browser_use.agent.prompts module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="browser_use.agent.prompts.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,6 +1,3 @@
-browser\_use.controller.views module
-====================================
-
 .. automodule:: browser_use.controller.views
    :members:
    :undoc-members:
