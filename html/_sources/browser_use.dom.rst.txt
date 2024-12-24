@@ -1,0 +1,19 @@
+browser\_use.dom package
+========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   browser_use.dom.service
+   browser_use.dom.views
+
+Module contents
+---------------
+
+.. automodule:: browser_use.dom
+   :members:
+   :undoc-members:
+   :show-inheritance:

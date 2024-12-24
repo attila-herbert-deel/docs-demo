@@ -1,0 +1,7 @@
+browser\_use.telemetry.views module
+===================================
+
+.. automodule:: browser_use.telemetry.views
+   :members:
+   :undoc-members:
+   :show-inheritance:

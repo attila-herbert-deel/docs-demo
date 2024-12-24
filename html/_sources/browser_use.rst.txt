@@ -1,0 +1,31 @@
+browser\_use package
+====================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   browser_use.agent
+   browser_use.browser
+   browser_use.controller
+   browser_use.dom
+   browser_use.telemetry
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   browser_use.logging_config
+   browser_use.utils
+
+Module contents
+---------------
+
+.. automodule:: browser_use
+   :members:
+   :undoc-members:
+   :show-inheritance:

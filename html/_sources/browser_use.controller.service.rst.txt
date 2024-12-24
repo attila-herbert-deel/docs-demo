@@ -1,0 +1,7 @@
+browser\_use.controller.service module
+======================================
+
+.. automodule:: browser_use.controller.service
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,19 @@
+browser\_use.controller package
+===============================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   browser_use.controller.service
+   browser_use.controller.views
+
+Module contents
+---------------
+
+.. automodule:: browser_use.controller
+   :members:
+   :undoc-members:
+   :show-inheritance:

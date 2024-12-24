@@ -1,0 +1,7 @@
+browser\_use.browser.context module
+===================================
+
+.. automodule:: browser_use.browser.context
+   :members:
+   :undoc-members:
+   :show-inheritance:

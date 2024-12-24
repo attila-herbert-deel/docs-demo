@@ -1,0 +1,7 @@
+browser_use
+===========
+
+.. toctree::
+   :maxdepth: 4
+
+   browser_use

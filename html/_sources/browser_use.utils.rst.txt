@@ -1,0 +1,7 @@
+browser\_use.utils module
+=========================
+
+.. automodule:: browser_use.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:

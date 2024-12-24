@@ -1,0 +1,7 @@
+browser\_use.agent.views module
+===============================
+
+.. automodule:: browser_use.agent.views
+   :members:
+   :undoc-members:
+   :show-inheritance:

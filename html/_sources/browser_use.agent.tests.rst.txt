@@ -1,0 +1,7 @@
+browser\_use.agent.tests module
+===============================
+
+.. automodule:: browser_use.agent.tests
+   :members:
+   :undoc-members:
+   :show-inheritance:

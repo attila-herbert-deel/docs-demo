@@ -1,0 +1,21 @@
+browser\_use.agent package
+==========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   browser_use.agent.prompts
+   browser_use.agent.service
+   browser_use.agent.tests
+   browser_use.agent.views
+
+Module contents
+---------------
+
+.. automodule:: browser_use.agent
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+browser\_use.dom.service module
+===============================
+
+.. automodule:: browser_use.dom.service
+   :members:
+   :undoc-members:
+   :show-inheritance:

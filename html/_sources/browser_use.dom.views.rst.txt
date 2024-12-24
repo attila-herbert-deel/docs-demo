@@ -1,0 +1,7 @@
+browser\_use.dom.views module
+=============================
+
+.. automodule:: browser_use.dom.views
+   :members:
+   :undoc-members:
+   :show-inheritance:

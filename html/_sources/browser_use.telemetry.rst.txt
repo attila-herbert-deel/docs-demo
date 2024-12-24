@@ -1,0 +1,19 @@
+browser\_use.telemetry package
+==============================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   browser_use.telemetry.service
+   browser_use.telemetry.views
+
+Module contents
+---------------
+
+.. automodule:: browser_use.telemetry
+   :members:
+   :undoc-members:
+   :show-inheritance:

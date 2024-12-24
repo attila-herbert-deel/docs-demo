@@ -1,0 +1,7 @@
+browser\_use.agent.prompts module
+=================================
+
+.. automodule:: browser_use.agent.prompts
+   :members:
+   :undoc-members:
+   :show-inheritance:

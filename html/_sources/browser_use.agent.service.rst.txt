@@ -1,0 +1,7 @@
+browser\_use.agent.service module
+=================================
+
+.. automodule:: browser_use.agent.service
+   :members:
+   :undoc-members:
+   :show-inheritance:
